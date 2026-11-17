@@ -1,0 +1,12 @@
+{
+  "ordinary": 100,
+  "developed_open": 160,
+  "forest": 180,
+  "low_development": 250,
+  "wetland": 400,
+  "medium_high_development": 600,
+  "open_water": 900,
+  "protected": 1000,
+  "slope_threshold": 0.1,
+  "slope_add": 100
+}
