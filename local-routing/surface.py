@@ -68,4 +68,5 @@ def build(start, end, output, region):
     slope_map=np.where(valid & np.isfinite(slope),np.where(slope>=weights['slope_threshold'],600,100),65535).astype('uint16')
     protected_map=np.where(valid,np.where(pmask,1000,100),65535).astype('uint16')
     with rasterio.open(output,'w',driver='GTiff',height=height,width=width,count=1,dtype='uint16',crs='EPSG:5070',transform=tr,nodata=65535,compress='deflate') as dst: dst.write(cost,1)
-    return {'region':region,'resolution_m':res,'width':width,'height':height,'valid_cells':int(valid.sum()),'footprint_cells':int(inside.sum()),'protected_cells':int((pmask & valid).sum()),'nwi_nonzero_cells':int(((nwi>0)&(nwi<255)&valid).sum()),'weights':weights}, {'land_cover':land_map,'nwi_nonzero':nwi_map,'slope':slope_map,'padus':protected_map}
+    identify={'land':land,'nwi':nwi,'slope':slope,'protected':pmask,'valid':valid,'cost':cost,'transform':tr,'threshold':weights['slope_threshold']}
+    return {'region':region,'resolution_m':res,'width':width,'height':height,'valid_cells':int(valid.sum()),'footprint_cells':int(inside.sum()),'protected_cells':int((pmask & valid).sum()),'nwi_nonzero_cells':int(((nwi>0)&(nwi<255)&valid).sum()),'weights':weights}, {'land_cover':land_map,'nwi_nonzero':nwi_map,'slope':slope_map,'padus':protected_map}, identify

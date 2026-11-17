@@ -1,5 +1,6 @@
 """Local Illinois routing test using the user's tiled GIS data."""
-import json, logging, math, os, tempfile, io, base64
+import json, logging, math, os, tempfile, io, base64, secrets, time
+from collections import OrderedDict
 from html import escape
 from pathlib import Path
 from threading import Lock
@@ -24,6 +25,26 @@ from surface import build, STATE, FOOTPRINTS
 app=FastAPI(title='MISO and NYISO 345-kV local routing test')
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_methods=['GET','POST'], allow_headers=['*'])
 lock=Lock()
+cache_lock=Lock()
+identify_cache=OrderedDict()
+LAND_NAMES={11:'Open water',12:'Perennial ice or snow',21:'Developed open space',22:'Low-intensity development',23:'Medium-intensity development',24:'High-intensity development',31:'Barren land',41:'Deciduous forest',42:'Evergreen forest',43:'Mixed forest',52:'Shrub or scrub',71:'Grassland or herbaceous',81:'Pasture or hay',82:'Cultivated crops',90:'Woody wetlands',95:'Emergent herbaceous wetlands'}
+
+@app.get('/identify')
+def identify(token:str,lon:float,lat:float):
+    if not (math.isfinite(lon) and math.isfinite(lat) and -180<=lon<=180 and -90<=lat<=90):
+        raise HTTPException(422,'Invalid coordinates')
+    with cache_lock:
+        entry=identify_cache.get(token)
+        if entry is None or time.monotonic()-entry[0]>1800:
+            identify_cache.pop(token,None)
+            raise HTTPException(410,'Route data expired. Calculate the route again.')
+        data=entry[1]
+    x,y=transform('EPSG:4326','EPSG:5070',[lon],[lat]); col,row=(~data['transform'])*(x[0],y[0]); row,col=math.floor(row),math.floor(col)
+    height,width=data['valid'].shape
+    if not (0<=row<height and 0<=col<width): return {'available':False,'message':'Outside the calculated area'}
+    if not data['valid'][row,col]: return {'available':False,'message':'No usable data at this location'}
+    land=int(data['land'][row,col]);nwi=int(data['nwi'][row,col]);slope=float(data['slope'][row,col])
+    return {'available':True,'land_cover':LAND_NAMES.get(land,f'Land-cover class {land}'),'land_code':land,'nwi_class':nwi,'nwi_note':'Mapped NWI class; type not verified' if nwi else 'No nonzero NWI class mapped','protected':bool(data['protected'][row,col]),'slope_percent':round(slope*100,1) if math.isfinite(slope) else None,'slope_threshold_percent':data['threshold']*100,'preference':int(data['cost'][row,col])}
 class Request(BaseModel):
     start: tuple[float,float]
     end: tuple[float,float]
@@ -95,7 +116,7 @@ def route(req:Request):
         if math.dist(*coords)<30: raise HTTPException(422,'Choose points at least 30 meters apart.')
         with lock, tempfile.TemporaryDirectory() as tmp:
             tif=str(Path(tmp)/'cost.tif')
-            metadata,layers=build(*coords,tif,region)
+            metadata,layers,identify_data=build(*coords,tif,region)
             with rasterio.open(tif) as src:
                 a=src.read(1)
                 for name,p in zip(('start','end'),coords):
@@ -128,7 +149,11 @@ def route(req:Request):
             priced=sum(x['miles'] for x in segments)
             complete=all(x['line_cost_usd'] is not None for x in segments) and abs(priced-length/1.609344)<0.002
             estimate={'route_miles':round(length/1.609344,4),'line_voltage_kv':345,'circuit':'single','state_segments':segments,'line_cost_usd':sum(x['line_cost_usd'] for x in segments) if complete and segments else None,'basis':'MISO MTEP24 single-circuit state rates, 2024 dollars; includes contingency and AFUDC. No default rate for New York. User override applies across the route. Excludes separate substations.'}
-            result.update(route_length_km=round(length,6),estimate=estimate,data=metadata,screening_map_png_base64=map_png,layer_maps_png_base64=layer_maps,map_layers=map_layers,warning='Screening only. Colours are combined preference indices, not dollar costs. 3 km search buffer and coarser long-route grid can miss alternatives; source coverage is incomplete.')
+            token=secrets.token_urlsafe(16)
+            with cache_lock:
+                identify_cache[token]=(time.monotonic(),identify_data)
+                while len(identify_cache)>4: identify_cache.popitem(last=False)
+            result.update(route_length_km=round(length,6),estimate=estimate,data=metadata,identify_token=token,screening_map_png_base64=map_png,layer_maps_png_base64=layer_maps,map_layers=map_layers,warning='Screening only. Colours are combined preference indices, not dollar costs. 3 km search buffer and coarser long-route grid can miss alternatives; source coverage is incomplete.')
             return result
     except HTTPException: raise
     except ValueError as e:
