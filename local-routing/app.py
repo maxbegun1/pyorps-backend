@@ -9,6 +9,7 @@ os.environ.setdefault('OPENBLAS_NUM_THREADS','1')
 os.environ.setdefault('NUMBA_NUM_THREADS','1')
 import geopandas as gpd
 import numpy as np
+import psutil
 import rasterio
 from rasterio.features import rasterize
 from rasterio.warp import transform, transform_geom, calculate_default_transform, reproject, Resampling, transform_bounds
@@ -122,7 +123,13 @@ def routing_css(): return FileResponse(Path(__file__).parent/'routing-map.css',m
 def routing_config(): return FileResponse(Path(__file__).parent/'routing-config.js',media_type='application/javascript')
 
 @app.get('/health')
-def health(): return {'status':'ok','mode':'local MISO and NYISO GIS test'}
+def health():
+    info={'status':'ok','mode':'github GIS' if os.environ.get('PYORPS_DATA_BASE_URL') else 'local GIS','memory_rss_mb':round(psutil.Process().memory_info().rss/1048576,1)}
+    try:
+        import resource
+        info['peak_memory_mb']=round(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024,1)
+    except ImportError: pass
+    return info
 
 @app.post('/route')
 def route(req:Request):
