@@ -2,7 +2,6 @@
 import csv
 import json
 import math
-import os
 from pathlib import Path
 import geopandas as gpd
 import numpy as np
@@ -10,11 +9,11 @@ import rasterio
 from rasterio.features import rasterize
 from rasterio.transform import from_origin
 from rasterio.warp import reproject, Resampling
+from data_store import ROOT as DATA, get_file
 
-DATA = Path(os.environ.get('PYORPS_DATA_DIR', str(Path.home()/'Downloads'/'PYORPS_MISO_NYISO_Data')))
-INDEX = list(csv.DictReader((DATA / 'tile_index.csv').open(encoding='utf-8')))
-STATE = gpd.read_file('zip://' + str(DATA/'source/cb_2025_us_state_20m.zip')).to_crs(5070)
-FOOTPRINTS = {region: gpd.read_file(DATA/f'boundaries/{region.lower()}_footprint.gpkg').to_crs(5070).geometry.union_all() for region in ('MISO','NYISO')}
+INDEX = list(csv.DictReader(get_file('tile_index.csv').open(encoding='utf-8')))
+STATE = gpd.read_file('zip://' + str(get_file('source/cb_2025_us_state_20m.zip'))).to_crs(5070)
+FOOTPRINTS = {region: gpd.read_file(get_file(f'boundaries/{region.lower()}_footprint.gpkg')).to_crs(5070).geometry.union_all() for region in ('MISO','NYISO')}
 
 def build(start, end, output, region):
     weights=json.loads((Path(__file__).parent/'weights.json').read_text(encoding='utf-8'))
@@ -37,7 +36,7 @@ def build(start, end, output, region):
         dst = np.full((height,width),nodata,dtype=dtype)
         tiles = [r for r in INDEX if r['region']==region and r['layer']==name and float(r['xmin'])<right and float(r['xmax'])>left and float(r['ymin'])<top and float(r['ymax'])>bottom]
         for r in tiles:
-            with rasterio.open(DATA/r['relative_path']) as src:
+            with rasterio.open(get_file(r['relative_path'])) as src:
                 reproject(source=rasterio.band(src,1),destination=dst,src_transform=src.transform,src_crs=src.crs,src_nodata=src.nodata,dst_transform=tr,dst_crs='EPSG:5070',dst_nodata=nodata,resampling=sampling,init_dest_nodata=False,num_threads=1)
         layers[name] = dst
     land,nwi,elev = [layers[x] for x in ('NLCD_2024_landcover','NWI_class','3DEP_elevation')]
@@ -55,7 +54,7 @@ def build(start, end, output, region):
     gy,gx=np.gradient(safe_elev,res)
     slope=np.hypot(gx,gy)
     cost[np.isfinite(slope)&(slope>=weights['slope_threshold'])] += weights['slope_add']
-    protected=gpd.read_file(DATA/f'vectors/{region.lower()}_padus_protected_areas.gpkg',bbox=(left,bottom,right,top))
+    protected=gpd.read_file(get_file(f'vectors/{region.lower()}_padus_protected_areas.gpkg'),bbox=(left,bottom,right,top))
     if len(protected):
         invalid=~protected.geometry.is_valid
         if invalid.any(): protected.loc[invalid,'geometry']=protected.loc[invalid,'geometry'].make_valid()

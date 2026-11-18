@@ -1,0 +1,17 @@
+# Draft: configure the GIS data source and CORS origin before creating the service.
+services:
+  - type: web
+    name: pyorps-routing-test
+    runtime: python
+    plan: free
+    rootDir: local-routing
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: PYORPS_DATA_BASE_URL
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false

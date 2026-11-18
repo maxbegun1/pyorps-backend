@@ -1,0 +1,9 @@
+# Versions used by the locally tested Python 3.12 environment.
+fastapi==0.162.5
+uvicorn==0.54.0
+pyorps==0.4.0
+geopandas==1.2.0
+rasterio==1.5.2
+numpy==2.5.4
+shapely==2.2.0
+pillow==13.0.0
