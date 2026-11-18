@@ -1,5 +1,5 @@
 """Local Illinois routing test using the user's tiled GIS data."""
-import json, logging, math, os, tempfile, io, base64, secrets, time
+import json, logging, math, os, tempfile, io, base64, secrets, time, csv
 from collections import OrderedDict
 from html import escape
 from pathlib import Path
@@ -17,13 +17,14 @@ from fastapi.responses import HTMLResponse
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
+from typing import Literal
 from pyorps import PathFinder
 from shapely.geometry import Point
 from PIL import Image, ImageDraw
 from surface import build, STATE, FOOTPRINTS
 
 app=FastAPI(title='MISO and NYISO 345-kV local routing test')
-app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_methods=['GET','POST'], allow_headers=['*'])
+app.add_middleware(CORSMiddleware, allow_origins=[x.strip() for x in os.environ.get('CORS_ORIGINS','http://127.0.0.1:8772,http://localhost:8772').split(',') if x.strip()], allow_methods=['GET','POST'], allow_headers=['Content-Type'])
 lock=Lock()
 cache_lock=Lock()
 identify_cache=OrderedDict()
@@ -49,8 +50,26 @@ class Request(BaseModel):
     start: tuple[float,float]
     end: tuple[float,float]
     cost_per_mile: float | None=Field(default=None,gt=0,le=1000000000)
+    voltage_kv: Literal[69,115,138,230,345]=345
 
-RATES={'AR':3.5,'IL':3.6,'IN':3.4,'IA':3.5,'KY':3.7,'LA':4.1,'MI':3.7,'MN':3.6,'MS':4.1,'MO':3.5,'MT':3.2,'ND':3.3,'SD':3.3,'TX':4.0,'WI':3.7}
+# MISO MTEP24 Table 4.1-1, $million/mile, new single-circuit lines, 2024 USD.
+VOLTAGES=[69,115,138,230,345]
+RATES={'AR':[1.7,1.9,2.0,2.2,3.5],'IL':[1.8,2.0,2.0,2.2,3.6],'IN':[1.7,1.9,2.0,2.1,3.4],'IA':[1.7,1.9,2.0,2.2,3.5],'KY':[1.8,2.0,2.1,2.3,3.7],'LA':[2.0,2.2,2.3,2.6,4.1],'MI':[1.8,2.0,2.1,2.3,3.7],'MN':[1.8,2.0,2.1,2.3,3.6],'MS':[2.0,2.2,2.3,2.6,4.1],'MO':[1.7,1.9,2.0,2.2,3.5],'MT':[1.6,1.8,1.9,2.0,3.2],'ND':[1.6,1.8,1.9,2.0,3.3],'SD':[1.6,1.8,1.9,2.0,3.3],'TX':[1.9,2.2,2.3,2.5,4.0],'WI':[1.8,2.0,2.1,2.3,3.7]}
+
+def load_pois():
+    with (Path(__file__).parent/'poi_coordinates_clean.csv').open(encoding='utf-8-sig',newline='') as f:
+        return [dict(row,latitude=float(row['latitude']),longitude=float(row['longitude'])) for row in csv.DictReader(f)]
+POIS=load_pois()
+
+@app.get('/pois/nearest')
+def nearest_pois(lon:float,lat:float):
+    if not (math.isfinite(lon) and math.isfinite(lat) and -180<=lon<=180 and -90<=lat<=90): raise HTTPException(422,'Invalid coordinates')
+    def distance(p):
+        a,b=math.radians(lat),math.radians(p['latitude']);da=b-a;dl=math.radians(p['longitude']-lon)
+        x=math.sin(da/2)**2+math.cos(a)*math.cos(b)*math.sin(dl/2)**2
+        return 3958.7613*2*math.asin(min(1,math.sqrt(x)))
+    nearest=sorted(POIS,key=distance)[:5]
+    return {'method':'nearest by straight-line great-circle distance; no electrical compatibility check','pois':[{'name':p['queue_poi_name_exact'] or p['map_poi_name'] or p['bus_name'],'map_poi_name':p['map_poi_name'],'queue_poi_name':p['queue_poi_name_exact'],'bus_number':p['bus_number'],'voltage_kv':p['voltage_kv'],'latitude':p['latitude'],'longitude':p['longitude'],'coordinate_status':p['coordinate_status'],'source':p['source'],'distance_miles':round(distance(p),3)} for p in nearest]}
 
 def draw_map(a, src, routes):
     # Colours represent combined relative costs, not independent GIS layers.
@@ -98,6 +117,9 @@ def routing_js(): return FileResponse(Path(__file__).parent/'routing-map.js',med
 @app.get('/routing-map.css')
 def routing_css(): return FileResponse(Path(__file__).parent/'routing-map.css',media_type='text/css')
 
+@app.get('/routing-config.js')
+def routing_config(): return FileResponse(Path(__file__).parent/'routing-config.js',media_type='application/javascript')
+
 @app.get('/health')
 def health(): return {'status':'ok','mode':'local MISO and NYISO GIS test'}
 
@@ -144,15 +166,15 @@ def route(req:Request):
             for _,state in STATE.iterrows():
                 distance=line.intersection(state.geometry).length
                 if distance>0.01:
-                    rate=req.cost_per_mile if req.cost_per_mile is not None else (RATES.get(state.STUSPS)*1e6 if state.STUSPS in RATES else None)
+                    rate=req.cost_per_mile if req.cost_per_mile is not None else (RATES[state.STUSPS][VOLTAGES.index(req.voltage_kv)]*1e6 if state.STUSPS in RATES else None)
                     segments.append({'state':state.STUSPS,'miles':round(distance/1609.344,5),'rate_usd_per_mile':rate,'line_cost_usd':round(distance/1609.344*rate) if rate else None})
             priced=sum(x['miles'] for x in segments)
             complete=all(x['line_cost_usd'] is not None for x in segments) and abs(priced-length/1.609344)<0.002
-            estimate={'route_miles':round(length/1.609344,4),'line_voltage_kv':345,'circuit':'single','state_segments':segments,'line_cost_usd':sum(x['line_cost_usd'] for x in segments) if complete and segments else None,'basis':'MISO MTEP24 single-circuit state rates, 2024 dollars; includes contingency and AFUDC. No default rate for New York. User override applies across the route. Excludes separate substations.'}
+            estimate={'route_miles':round(length/1.609344,4),'line_voltage_kv':req.voltage_kv,'circuit':'single','state_segments':segments,'line_cost_usd':sum(x['line_cost_usd'] for x in segments) if complete and segments else None,'basis':'MISO MTEP24 new single-circuit state rates, 2024 dollars; includes contingency and AFUDC. No default rate for New York. User override applies across the route. Excludes separate substations. Routing weights are the same for all voltages.'}
             token=secrets.token_urlsafe(16)
             with cache_lock:
                 identify_cache[token]=(time.monotonic(),identify_data)
-                while len(identify_cache)>4: identify_cache.popitem(last=False)
+                while len(identify_cache)>6: identify_cache.popitem(last=False)
             result.update(route_length_km=round(length,6),estimate=estimate,data=metadata,identify_token=token,screening_map_png_base64=map_png,layer_maps_png_base64=layer_maps,map_layers=map_layers,warning='Screening only. Colours are combined preference indices, not dollar costs. 3 km search buffer and coarser long-route grid can miss alternatives; source coverage is incomplete.')
             return result
     except HTTPException: raise

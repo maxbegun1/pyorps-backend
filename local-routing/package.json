@@ -1,1 +1,1 @@
-{"private":true,"scripts":{"test":"node --check routing-map.js"}}
+{"private":true,"scripts":{"test":"node --check routing-map.js && node --check routing-config.js"}}

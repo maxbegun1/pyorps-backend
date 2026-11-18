@@ -1,4 +1,4 @@
-# 345-kV local routing experiment
+# Local transmission routing experiment
 
 This isolated prototype is separate from the repository's existing root app. It is not deployed and does not alter the current service. It provides a local FastAPI map, state switching, OpenStreetMap tiles, click-to-select endpoints, PYORPS routing, and optional screening overlays from a separately supplied GIS dataset.
 
@@ -17,4 +17,14 @@ The state selector changes the map view. The backend determines actual route sta
 
 MISO and New York footprints are planning masks. The MISO source is a 2021 public territory polygon; the NYISO mask is a New York state proxy. Source protected-area polygons have different designations and are discouraged rather than treated as universally prohibited. Invalid geometries are repaired in memory for routing; original data are not altered. NWI values above zero are conservatively penalized, but the bundle's value legend is unverified. This is not a complete siting, permitting, parcel, or legal boundary analysis. Parcel boundaries, tribal areas, floodplains, cultural sites, land rights, and many other constraints are not represented. See `boundary_audit.json` for feature counts and geometry validity, which describe this bundle and are not counts of independent legal boundaries.
 
-This local prototype has an open CORS policy. It must be restricted and separately reviewed before public deployment. Do not expose it directly as an unprotected public service or assume it is ready for Render's free-tier resource limits. There is no deployed website integration yet.
+## Five nearby POIs and line voltage
+
+Click a start and choose “Find and route nearest 5 POIs.” The five nearest are chosen by straight-line great-circle distance, then PYORPS calculates each route separately. A route can fail if the source data do not cover it; the failure is shown beside that POI. Nearest does not mean electrically compatible, available for interconnection, or feasible. POIs can share coordinates and represent different buses. The voltage selector uses 69, 115, 138, 230 and 345 kV single-circuit estimates from MISO MTEP24 Table 4.1-1. They are a shortlist based on the most frequently tagged voltage values in a local nationwide OpenStreetMap line-segment extract, not a verified ranking of projects built. All MISO states with published rates are supported. Route preferences are not voltage-specific.
+
+`poi_coordinates_clean.csv` contains 10,012 rows with valid values in the supplied latitude and longitude columns; 2,833 rows without such a pair were omitted. Estimated-only coordinates were not promoted into those columns. The original status and source columns are retained. Source names and coordinates are not independently validated by this app; some are HIFLD name matches rather than MISO's public map locations.
+
+## Separate frontend and API
+
+`routing-config.js` defaults to a same-origin API for local use. For a Workers-hosted copy of the map, set `window.ROUTING_API_BASE` to the actual HTTPS Render service origin and serve the map HTML, CSS, JS, and config together. Set the backend environment variable `CORS_ORIGINS` to the exact frontend origin; it accepts comma-separated origins. Never set an invented URL. The existing API service must have the GIS bundle at `PYORPS_DATA_DIR`, and its bundled POI CSV beside the code.
+
+The 4.81 GiB GIS folder is not in this repository. Render Free has an ephemeral filesystem and 512 MB RAM. A separate accessible data source, a strategy for fetching only the relevant tiles, memory and CPU measurements, a verified Linux build and a real Render URL are required before this can be called deployment-ready. Five routes are computed sequentially and may be slow or exceed free-tier resources. The code has not been integrated into the existing Workers site or deployed.
