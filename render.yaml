@@ -1,4 +1,4 @@
-# Draft: configure the GIS data source and CORS origin before creating the service.
+# Draft: the GitHub data release must be published before creating the service.
 services:
   - type: web
     name: pyorps-routing-test
@@ -12,6 +12,6 @@ services:
       - key: PYTHON_VERSION
         value: 3.12.8
       - key: PYORPS_DATA_BASE_URL
-        sync: false
+        value: https://github.com/maxbegun1/pyorps-backend/releases/download/pyorps-gis-20261117
       - key: CORS_ORIGINS
-        sync: false
+        value: https://queue-atlas-research-preview.mbbegun.workers.dev

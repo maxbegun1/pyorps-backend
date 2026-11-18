@@ -1,0 +1,2393 @@
+{
+  "version": 1,
+  "files": {
+    "tile_index.csv": "gis_core.zip",
+    "README.txt": "gis_core.zip",
+    "validation_report.txt": "gis_core.zip",
+    "source/cb_2025_us_state_20m.zip": "gis_core.zip",
+    "boundaries/miso_footprint.gpkg": "gis_core.zip",
+    "boundaries/nyiso_footprint.gpkg": "gis_core.zip",
+    "vectors/miso_padus_protected_areas.gpkg": "miso_protected.zip",
+    "rasters/miso/3dep_30m/x-083_y+42.tif": "miso_x-083_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-083_y+42.tif": "miso_x-083_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-083_y+42.tif": "miso_x-083_yp42.zip",
+    "rasters/miso/3dep_30m/x-083_y+43.tif": "miso_x-083_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-083_y+43.tif": "miso_x-083_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-083_y+43.tif": "miso_x-083_yp43.zip",
+    "rasters/miso/3dep_30m/x-083_y+44.tif": "miso_x-083_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-083_y+44.tif": "miso_x-083_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-083_y+44.tif": "miso_x-083_yp44.zip",
+    "rasters/miso/3dep_30m/x-084_y+41.tif": "miso_x-084_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-084_y+41.tif": "miso_x-084_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-084_y+41.tif": "miso_x-084_yp41.zip",
+    "rasters/miso/3dep_30m/x-084_y+42.tif": "miso_x-084_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-084_y+42.tif": "miso_x-084_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-084_y+42.tif": "miso_x-084_yp42.zip",
+    "rasters/miso/3dep_30m/x-084_y+43.tif": "miso_x-084_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-084_y+43.tif": "miso_x-084_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-084_y+43.tif": "miso_x-084_yp43.zip",
+    "rasters/miso/3dep_30m/x-084_y+44.tif": "miso_x-084_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-084_y+44.tif": "miso_x-084_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-084_y+44.tif": "miso_x-084_yp44.zip",
+    "rasters/miso/3dep_30m/x-084_y+45.tif": "miso_x-084_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-084_y+45.tif": "miso_x-084_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-084_y+45.tif": "miso_x-084_yp45.zip",
+    "rasters/miso/3dep_30m/x-084_y+46.tif": "miso_x-084_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-084_y+46.tif": "miso_x-084_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-084_y+46.tif": "miso_x-084_yp46.zip",
+    "rasters/miso/3dep_30m/x-085_y+38.tif": "miso_x-085_yp38.zip",
+    "rasters/miso/nlcd_2024_30m/x-085_y+38.tif": "miso_x-085_yp38.zip",
+    "rasters/miso/nwi_thematic_30m/x-085_y+38.tif": "miso_x-085_yp38.zip",
+    "rasters/miso/3dep_30m/x-085_y+39.tif": "miso_x-085_yp39.zip",
+    "rasters/miso/nlcd_2024_30m/x-085_y+39.tif": "miso_x-085_yp39.zip",
+    "rasters/miso/nwi_thematic_30m/x-085_y+39.tif": "miso_x-085_yp39.zip",
+    "rasters/miso/3dep_30m/x-085_y+40.tif": "miso_x-085_yp40.zip",
+    "rasters/miso/nlcd_2024_30m/x-085_y+40.tif": "miso_x-085_yp40.zip",
+    "rasters/miso/nwi_thematic_30m/x-085_y+40.tif": "miso_x-085_yp40.zip",
+    "rasters/miso/3dep_30m/x-085_y+41.tif": "miso_x-085_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-085_y+41.tif": "miso_x-085_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-085_y+41.tif": "miso_x-085_yp41.zip",
+    "rasters/miso/3dep_30m/x-085_y+42.tif": "miso_x-085_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-085_y+42.tif": "miso_x-085_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-085_y+42.tif": "miso_x-085_yp42.zip",
+    "rasters/miso/3dep_30m/x-085_y+43.tif": "miso_x-085_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-085_y+43.tif": "miso_x-085_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-085_y+43.tif": "miso_x-085_yp43.zip",
+    "rasters/miso/3dep_30m/x-085_y+44.tif": "miso_x-085_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-085_y+44.tif": "miso_x-085_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-085_y+44.tif": "miso_x-085_yp44.zip",
+    "rasters/miso/3dep_30m/x-085_y+45.tif": "miso_x-085_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-085_y+45.tif": "miso_x-085_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-085_y+45.tif": "miso_x-085_yp45.zip",
+    "rasters/miso/3dep_30m/x-085_y+46.tif": "miso_x-085_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-085_y+46.tif": "miso_x-085_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-085_y+46.tif": "miso_x-085_yp46.zip",
+    "rasters/miso/3dep_30m/x-086_y+37.tif": "miso_x-086_yp37.zip",
+    "rasters/miso/nlcd_2024_30m/x-086_y+37.tif": "miso_x-086_yp37.zip",
+    "rasters/miso/nwi_thematic_30m/x-086_y+37.tif": "miso_x-086_yp37.zip",
+    "rasters/miso/3dep_30m/x-086_y+38.tif": "miso_x-086_yp38.zip",
+    "rasters/miso/nlcd_2024_30m/x-086_y+38.tif": "miso_x-086_yp38.zip",
+    "rasters/miso/nwi_thematic_30m/x-086_y+38.tif": "miso_x-086_yp38.zip",
+    "rasters/miso/3dep_30m/x-086_y+39.tif": "miso_x-086_yp39.zip",
+    "rasters/miso/nlcd_2024_30m/x-086_y+39.tif": "miso_x-086_yp39.zip",
+    "rasters/miso/nwi_thematic_30m/x-086_y+39.tif": "miso_x-086_yp39.zip",
+    "rasters/miso/3dep_30m/x-086_y+40.tif": "miso_x-086_yp40.zip",
+    "rasters/miso/nlcd_2024_30m/x-086_y+40.tif": "miso_x-086_yp40.zip",
+    "rasters/miso/nwi_thematic_30m/x-086_y+40.tif": "miso_x-086_yp40.zip",
+    "rasters/miso/3dep_30m/x-086_y+41.tif": "miso_x-086_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-086_y+41.tif": "miso_x-086_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-086_y+41.tif": "miso_x-086_yp41.zip",
+    "rasters/miso/3dep_30m/x-086_y+42.tif": "miso_x-086_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-086_y+42.tif": "miso_x-086_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-086_y+42.tif": "miso_x-086_yp42.zip",
+    "rasters/miso/3dep_30m/x-086_y+43.tif": "miso_x-086_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-086_y+43.tif": "miso_x-086_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-086_y+43.tif": "miso_x-086_yp43.zip",
+    "rasters/miso/3dep_30m/x-086_y+44.tif": "miso_x-086_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-086_y+44.tif": "miso_x-086_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-086_y+44.tif": "miso_x-086_yp44.zip",
+    "rasters/miso/3dep_30m/x-086_y+45.tif": "miso_x-086_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-086_y+45.tif": "miso_x-086_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-086_y+45.tif": "miso_x-086_yp45.zip",
+    "rasters/miso/3dep_30m/x-086_y+46.tif": "miso_x-086_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-086_y+46.tif": "miso_x-086_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-086_y+46.tif": "miso_x-086_yp46.zip",
+    "rasters/miso/3dep_30m/x-087_y+37.tif": "miso_x-087_yp37.zip",
+    "rasters/miso/nlcd_2024_30m/x-087_y+37.tif": "miso_x-087_yp37.zip",
+    "rasters/miso/nwi_thematic_30m/x-087_y+37.tif": "miso_x-087_yp37.zip",
+    "rasters/miso/3dep_30m/x-087_y+38.tif": "miso_x-087_yp38.zip",
+    "rasters/miso/nlcd_2024_30m/x-087_y+38.tif": "miso_x-087_yp38.zip",
+    "rasters/miso/nwi_thematic_30m/x-087_y+38.tif": "miso_x-087_yp38.zip",
+    "rasters/miso/3dep_30m/x-087_y+39.tif": "miso_x-087_yp39.zip",
+    "rasters/miso/nlcd_2024_30m/x-087_y+39.tif": "miso_x-087_yp39.zip",
+    "rasters/miso/nwi_thematic_30m/x-087_y+39.tif": "miso_x-087_yp39.zip",
+    "rasters/miso/3dep_30m/x-087_y+40.tif": "miso_x-087_yp40.zip",
+    "rasters/miso/nlcd_2024_30m/x-087_y+40.tif": "miso_x-087_yp40.zip",
+    "rasters/miso/nwi_thematic_30m/x-087_y+40.tif": "miso_x-087_yp40.zip",
+    "rasters/miso/3dep_30m/x-087_y+41.tif": "miso_x-087_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-087_y+41.tif": "miso_x-087_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-087_y+41.tif": "miso_x-087_yp41.zip",
+    "rasters/miso/3dep_30m/x-087_y+42.tif": "miso_x-087_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-087_y+42.tif": "miso_x-087_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-087_y+42.tif": "miso_x-087_yp42.zip",
+    "rasters/miso/3dep_30m/x-087_y+43.tif": "miso_x-087_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-087_y+43.tif": "miso_x-087_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-087_y+43.tif": "miso_x-087_yp43.zip",
+    "rasters/miso/3dep_30m/x-087_y+44.tif": "miso_x-087_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-087_y+44.tif": "miso_x-087_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-087_y+44.tif": "miso_x-087_yp44.zip",
+    "rasters/miso/3dep_30m/x-087_y+45.tif": "miso_x-087_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-087_y+45.tif": "miso_x-087_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-087_y+45.tif": "miso_x-087_yp45.zip",
+    "rasters/miso/3dep_30m/x-087_y+46.tif": "miso_x-087_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-087_y+46.tif": "miso_x-087_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-087_y+46.tif": "miso_x-087_yp46.zip",
+    "rasters/miso/3dep_30m/x-088_y+37.tif": "miso_x-088_yp37.zip",
+    "rasters/miso/nlcd_2024_30m/x-088_y+37.tif": "miso_x-088_yp37.zip",
+    "rasters/miso/nwi_thematic_30m/x-088_y+37.tif": "miso_x-088_yp37.zip",
+    "rasters/miso/3dep_30m/x-088_y+38.tif": "miso_x-088_yp38.zip",
+    "rasters/miso/nlcd_2024_30m/x-088_y+38.tif": "miso_x-088_yp38.zip",
+    "rasters/miso/nwi_thematic_30m/x-088_y+38.tif": "miso_x-088_yp38.zip",
+    "rasters/miso/3dep_30m/x-088_y+39.tif": "miso_x-088_yp39.zip",
+    "rasters/miso/nlcd_2024_30m/x-088_y+39.tif": "miso_x-088_yp39.zip",
+    "rasters/miso/nwi_thematic_30m/x-088_y+39.tif": "miso_x-088_yp39.zip",
+    "rasters/miso/3dep_30m/x-088_y+40.tif": "miso_x-088_yp40.zip",
+    "rasters/miso/nlcd_2024_30m/x-088_y+40.tif": "miso_x-088_yp40.zip",
+    "rasters/miso/nwi_thematic_30m/x-088_y+40.tif": "miso_x-088_yp40.zip",
+    "rasters/miso/3dep_30m/x-088_y+41.tif": "miso_x-088_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-088_y+41.tif": "miso_x-088_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-088_y+41.tif": "miso_x-088_yp41.zip",
+    "rasters/miso/3dep_30m/x-088_y+42.tif": "miso_x-088_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-088_y+42.tif": "miso_x-088_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-088_y+42.tif": "miso_x-088_yp42.zip",
+    "rasters/miso/3dep_30m/x-088_y+43.tif": "miso_x-088_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-088_y+43.tif": "miso_x-088_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-088_y+43.tif": "miso_x-088_yp43.zip",
+    "rasters/miso/3dep_30m/x-088_y+44.tif": "miso_x-088_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-088_y+44.tif": "miso_x-088_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-088_y+44.tif": "miso_x-088_yp44.zip",
+    "rasters/miso/3dep_30m/x-088_y+45.tif": "miso_x-088_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-088_y+45.tif": "miso_x-088_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-088_y+45.tif": "miso_x-088_yp45.zip",
+    "rasters/miso/3dep_30m/x-088_y+46.tif": "miso_x-088_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-088_y+46.tif": "miso_x-088_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-088_y+46.tif": "miso_x-088_yp46.zip",
+    "rasters/miso/3dep_30m/x-088_y+47.tif": "miso_x-088_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-088_y+47.tif": "miso_x-088_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-088_y+47.tif": "miso_x-088_yp47.zip",
+    "rasters/miso/3dep_30m/x-089_y+30.tif": "miso_x-089_yp30.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+30.tif": "miso_x-089_yp30.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+30.tif": "miso_x-089_yp30.zip",
+    "rasters/miso/3dep_30m/x-089_y+31.tif": "miso_x-089_yp31.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+31.tif": "miso_x-089_yp31.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+31.tif": "miso_x-089_yp31.zip",
+    "rasters/miso/3dep_30m/x-089_y+32.tif": "miso_x-089_yp32.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+32.tif": "miso_x-089_yp32.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+32.tif": "miso_x-089_yp32.zip",
+    "rasters/miso/3dep_30m/x-089_y+36.tif": "miso_x-089_yp36.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+36.tif": "miso_x-089_yp36.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+36.tif": "miso_x-089_yp36.zip",
+    "rasters/miso/3dep_30m/x-089_y+37.tif": "miso_x-089_yp37.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+37.tif": "miso_x-089_yp37.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+37.tif": "miso_x-089_yp37.zip",
+    "rasters/miso/3dep_30m/x-089_y+38.tif": "miso_x-089_yp38.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+38.tif": "miso_x-089_yp38.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+38.tif": "miso_x-089_yp38.zip",
+    "rasters/miso/3dep_30m/x-089_y+39.tif": "miso_x-089_yp39.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+39.tif": "miso_x-089_yp39.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+39.tif": "miso_x-089_yp39.zip",
+    "rasters/miso/3dep_30m/x-089_y+40.tif": "miso_x-089_yp40.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+40.tif": "miso_x-089_yp40.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+40.tif": "miso_x-089_yp40.zip",
+    "rasters/miso/3dep_30m/x-089_y+41.tif": "miso_x-089_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+41.tif": "miso_x-089_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+41.tif": "miso_x-089_yp41.zip",
+    "rasters/miso/3dep_30m/x-089_y+42.tif": "miso_x-089_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+42.tif": "miso_x-089_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+42.tif": "miso_x-089_yp42.zip",
+    "rasters/miso/3dep_30m/x-089_y+43.tif": "miso_x-089_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+43.tif": "miso_x-089_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+43.tif": "miso_x-089_yp43.zip",
+    "rasters/miso/3dep_30m/x-089_y+44.tif": "miso_x-089_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+44.tif": "miso_x-089_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+44.tif": "miso_x-089_yp44.zip",
+    "rasters/miso/3dep_30m/x-089_y+45.tif": "miso_x-089_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+45.tif": "miso_x-089_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+45.tif": "miso_x-089_yp45.zip",
+    "rasters/miso/3dep_30m/x-089_y+46.tif": "miso_x-089_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+46.tif": "miso_x-089_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+46.tif": "miso_x-089_yp46.zip",
+    "rasters/miso/3dep_30m/x-089_y+47.tif": "miso_x-089_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-089_y+47.tif": "miso_x-089_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-089_y+47.tif": "miso_x-089_yp47.zip",
+    "rasters/miso/3dep_30m/x-090_y+29.tif": "miso_x-090_yp29.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+29.tif": "miso_x-090_yp29.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+29.tif": "miso_x-090_yp29.zip",
+    "rasters/miso/3dep_30m/x-090_y+30.tif": "miso_x-090_yp30.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+30.tif": "miso_x-090_yp30.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+30.tif": "miso_x-090_yp30.zip",
+    "rasters/miso/3dep_30m/x-090_y+31.tif": "miso_x-090_yp31.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+31.tif": "miso_x-090_yp31.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+31.tif": "miso_x-090_yp31.zip",
+    "rasters/miso/3dep_30m/x-090_y+32.tif": "miso_x-090_yp32.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+32.tif": "miso_x-090_yp32.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+32.tif": "miso_x-090_yp32.zip",
+    "rasters/miso/3dep_30m/x-090_y+33.tif": "miso_x-090_yp33.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+33.tif": "miso_x-090_yp33.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+33.tif": "miso_x-090_yp33.zip",
+    "rasters/miso/3dep_30m/x-090_y+34.tif": "miso_x-090_yp34.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+34.tif": "miso_x-090_yp34.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+34.tif": "miso_x-090_yp34.zip",
+    "rasters/miso/3dep_30m/x-090_y+35.tif": "miso_x-090_yp35.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+35.tif": "miso_x-090_yp35.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+35.tif": "miso_x-090_yp35.zip",
+    "rasters/miso/3dep_30m/x-090_y+36.tif": "miso_x-090_yp36.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+36.tif": "miso_x-090_yp36.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+36.tif": "miso_x-090_yp36.zip",
+    "rasters/miso/3dep_30m/x-090_y+37.tif": "miso_x-090_yp37.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+37.tif": "miso_x-090_yp37.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+37.tif": "miso_x-090_yp37.zip",
+    "rasters/miso/3dep_30m/x-090_y+38.tif": "miso_x-090_yp38.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+38.tif": "miso_x-090_yp38.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+38.tif": "miso_x-090_yp38.zip",
+    "rasters/miso/3dep_30m/x-090_y+39.tif": "miso_x-090_yp39.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+39.tif": "miso_x-090_yp39.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+39.tif": "miso_x-090_yp39.zip",
+    "rasters/miso/3dep_30m/x-090_y+40.tif": "miso_x-090_yp40.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+40.tif": "miso_x-090_yp40.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+40.tif": "miso_x-090_yp40.zip",
+    "rasters/miso/3dep_30m/x-090_y+41.tif": "miso_x-090_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+41.tif": "miso_x-090_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+41.tif": "miso_x-090_yp41.zip",
+    "rasters/miso/3dep_30m/x-090_y+42.tif": "miso_x-090_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+42.tif": "miso_x-090_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+42.tif": "miso_x-090_yp42.zip",
+    "rasters/miso/3dep_30m/x-090_y+43.tif": "miso_x-090_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+43.tif": "miso_x-090_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+43.tif": "miso_x-090_yp43.zip",
+    "rasters/miso/3dep_30m/x-090_y+44.tif": "miso_x-090_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+44.tif": "miso_x-090_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+44.tif": "miso_x-090_yp44.zip",
+    "rasters/miso/3dep_30m/x-090_y+45.tif": "miso_x-090_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+45.tif": "miso_x-090_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+45.tif": "miso_x-090_yp45.zip",
+    "rasters/miso/3dep_30m/x-090_y+46.tif": "miso_x-090_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+46.tif": "miso_x-090_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+46.tif": "miso_x-090_yp46.zip",
+    "rasters/miso/3dep_30m/x-090_y+47.tif": "miso_x-090_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+47.tif": "miso_x-090_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+47.tif": "miso_x-090_yp47.zip",
+    "rasters/miso/3dep_30m/x-090_y+48.tif": "miso_x-090_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-090_y+48.tif": "miso_x-090_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-090_y+48.tif": "miso_x-090_yp48.zip",
+    "rasters/miso/3dep_30m/x-091_y+29.tif": "miso_x-091_yp29.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+29.tif": "miso_x-091_yp29.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+29.tif": "miso_x-091_yp29.zip",
+    "rasters/miso/3dep_30m/x-091_y+30.tif": "miso_x-091_yp30.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+30.tif": "miso_x-091_yp30.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+30.tif": "miso_x-091_yp30.zip",
+    "rasters/miso/3dep_30m/x-091_y+31.tif": "miso_x-091_yp31.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+31.tif": "miso_x-091_yp31.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+31.tif": "miso_x-091_yp31.zip",
+    "rasters/miso/3dep_30m/x-091_y+32.tif": "miso_x-091_yp32.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+32.tif": "miso_x-091_yp32.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+32.tif": "miso_x-091_yp32.zip",
+    "rasters/miso/3dep_30m/x-091_y+33.tif": "miso_x-091_yp33.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+33.tif": "miso_x-091_yp33.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+33.tif": "miso_x-091_yp33.zip",
+    "rasters/miso/3dep_30m/x-091_y+34.tif": "miso_x-091_yp34.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+34.tif": "miso_x-091_yp34.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+34.tif": "miso_x-091_yp34.zip",
+    "rasters/miso/3dep_30m/x-091_y+35.tif": "miso_x-091_yp35.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+35.tif": "miso_x-091_yp35.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+35.tif": "miso_x-091_yp35.zip",
+    "rasters/miso/3dep_30m/x-091_y+36.tif": "miso_x-091_yp36.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+36.tif": "miso_x-091_yp36.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+36.tif": "miso_x-091_yp36.zip",
+    "rasters/miso/3dep_30m/x-091_y+37.tif": "miso_x-091_yp37.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+37.tif": "miso_x-091_yp37.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+37.tif": "miso_x-091_yp37.zip",
+    "rasters/miso/3dep_30m/x-091_y+38.tif": "miso_x-091_yp38.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+38.tif": "miso_x-091_yp38.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+38.tif": "miso_x-091_yp38.zip",
+    "rasters/miso/3dep_30m/x-091_y+39.tif": "miso_x-091_yp39.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+39.tif": "miso_x-091_yp39.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+39.tif": "miso_x-091_yp39.zip",
+    "rasters/miso/3dep_30m/x-091_y+40.tif": "miso_x-091_yp40.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+40.tif": "miso_x-091_yp40.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+40.tif": "miso_x-091_yp40.zip",
+    "rasters/miso/3dep_30m/x-091_y+41.tif": "miso_x-091_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+41.tif": "miso_x-091_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+41.tif": "miso_x-091_yp41.zip",
+    "rasters/miso/3dep_30m/x-091_y+42.tif": "miso_x-091_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+42.tif": "miso_x-091_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+42.tif": "miso_x-091_yp42.zip",
+    "rasters/miso/3dep_30m/x-091_y+43.tif": "miso_x-091_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+43.tif": "miso_x-091_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+43.tif": "miso_x-091_yp43.zip",
+    "rasters/miso/3dep_30m/x-091_y+44.tif": "miso_x-091_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+44.tif": "miso_x-091_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+44.tif": "miso_x-091_yp44.zip",
+    "rasters/miso/3dep_30m/x-091_y+45.tif": "miso_x-091_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+45.tif": "miso_x-091_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+45.tif": "miso_x-091_yp45.zip",
+    "rasters/miso/3dep_30m/x-091_y+46.tif": "miso_x-091_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+46.tif": "miso_x-091_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+46.tif": "miso_x-091_yp46.zip",
+    "rasters/miso/3dep_30m/x-091_y+47.tif": "miso_x-091_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+47.tif": "miso_x-091_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+47.tif": "miso_x-091_yp47.zip",
+    "rasters/miso/3dep_30m/x-091_y+48.tif": "miso_x-091_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-091_y+48.tif": "miso_x-091_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-091_y+48.tif": "miso_x-091_yp48.zip",
+    "rasters/miso/3dep_30m/x-092_y+29.tif": "miso_x-092_yp29.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+29.tif": "miso_x-092_yp29.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+29.tif": "miso_x-092_yp29.zip",
+    "rasters/miso/3dep_30m/x-092_y+30.tif": "miso_x-092_yp30.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+30.tif": "miso_x-092_yp30.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+30.tif": "miso_x-092_yp30.zip",
+    "rasters/miso/3dep_30m/x-092_y+31.tif": "miso_x-092_yp31.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+31.tif": "miso_x-092_yp31.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+31.tif": "miso_x-092_yp31.zip",
+    "rasters/miso/3dep_30m/x-092_y+32.tif": "miso_x-092_yp32.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+32.tif": "miso_x-092_yp32.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+32.tif": "miso_x-092_yp32.zip",
+    "rasters/miso/3dep_30m/x-092_y+33.tif": "miso_x-092_yp33.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+33.tif": "miso_x-092_yp33.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+33.tif": "miso_x-092_yp33.zip",
+    "rasters/miso/3dep_30m/x-092_y+34.tif": "miso_x-092_yp34.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+34.tif": "miso_x-092_yp34.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+34.tif": "miso_x-092_yp34.zip",
+    "rasters/miso/3dep_30m/x-092_y+35.tif": "miso_x-092_yp35.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+35.tif": "miso_x-092_yp35.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+35.tif": "miso_x-092_yp35.zip",
+    "rasters/miso/3dep_30m/x-092_y+36.tif": "miso_x-092_yp36.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+36.tif": "miso_x-092_yp36.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+36.tif": "miso_x-092_yp36.zip",
+    "rasters/miso/3dep_30m/x-092_y+38.tif": "miso_x-092_yp38.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+38.tif": "miso_x-092_yp38.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+38.tif": "miso_x-092_yp38.zip",
+    "rasters/miso/3dep_30m/x-092_y+39.tif": "miso_x-092_yp39.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+39.tif": "miso_x-092_yp39.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+39.tif": "miso_x-092_yp39.zip",
+    "rasters/miso/3dep_30m/x-092_y+40.tif": "miso_x-092_yp40.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+40.tif": "miso_x-092_yp40.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+40.tif": "miso_x-092_yp40.zip",
+    "rasters/miso/3dep_30m/x-092_y+41.tif": "miso_x-092_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+41.tif": "miso_x-092_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+41.tif": "miso_x-092_yp41.zip",
+    "rasters/miso/3dep_30m/x-092_y+42.tif": "miso_x-092_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+42.tif": "miso_x-092_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+42.tif": "miso_x-092_yp42.zip",
+    "rasters/miso/3dep_30m/x-092_y+43.tif": "miso_x-092_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+43.tif": "miso_x-092_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+43.tif": "miso_x-092_yp43.zip",
+    "rasters/miso/3dep_30m/x-092_y+44.tif": "miso_x-092_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+44.tif": "miso_x-092_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+44.tif": "miso_x-092_yp44.zip",
+    "rasters/miso/3dep_30m/x-092_y+45.tif": "miso_x-092_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+45.tif": "miso_x-092_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+45.tif": "miso_x-092_yp45.zip",
+    "rasters/miso/3dep_30m/x-092_y+46.tif": "miso_x-092_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+46.tif": "miso_x-092_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+46.tif": "miso_x-092_yp46.zip",
+    "rasters/miso/3dep_30m/x-092_y+47.tif": "miso_x-092_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+47.tif": "miso_x-092_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+47.tif": "miso_x-092_yp47.zip",
+    "rasters/miso/3dep_30m/x-092_y+48.tif": "miso_x-092_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-092_y+48.tif": "miso_x-092_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-092_y+48.tif": "miso_x-092_yp48.zip",
+    "rasters/miso/3dep_30m/x-093_y+29.tif": "miso_x-093_yp29.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+29.tif": "miso_x-093_yp29.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+29.tif": "miso_x-093_yp29.zip",
+    "rasters/miso/3dep_30m/x-093_y+30.tif": "miso_x-093_yp30.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+30.tif": "miso_x-093_yp30.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+30.tif": "miso_x-093_yp30.zip",
+    "rasters/miso/3dep_30m/x-093_y+31.tif": "miso_x-093_yp31.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+31.tif": "miso_x-093_yp31.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+31.tif": "miso_x-093_yp31.zip",
+    "rasters/miso/3dep_30m/x-093_y+32.tif": "miso_x-093_yp32.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+32.tif": "miso_x-093_yp32.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+32.tif": "miso_x-093_yp32.zip",
+    "rasters/miso/3dep_30m/x-093_y+33.tif": "miso_x-093_yp33.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+33.tif": "miso_x-093_yp33.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+33.tif": "miso_x-093_yp33.zip",
+    "rasters/miso/3dep_30m/x-093_y+34.tif": "miso_x-093_yp34.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+34.tif": "miso_x-093_yp34.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+34.tif": "miso_x-093_yp34.zip",
+    "rasters/miso/3dep_30m/x-093_y+35.tif": "miso_x-093_yp35.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+35.tif": "miso_x-093_yp35.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+35.tif": "miso_x-093_yp35.zip",
+    "rasters/miso/3dep_30m/x-093_y+36.tif": "miso_x-093_yp36.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+36.tif": "miso_x-093_yp36.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+36.tif": "miso_x-093_yp36.zip",
+    "rasters/miso/3dep_30m/x-093_y+37.tif": "miso_x-093_yp37.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+37.tif": "miso_x-093_yp37.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+37.tif": "miso_x-093_yp37.zip",
+    "rasters/miso/3dep_30m/x-093_y+38.tif": "miso_x-093_yp38.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+38.tif": "miso_x-093_yp38.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+38.tif": "miso_x-093_yp38.zip",
+    "rasters/miso/3dep_30m/x-093_y+39.tif": "miso_x-093_yp39.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+39.tif": "miso_x-093_yp39.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+39.tif": "miso_x-093_yp39.zip",
+    "rasters/miso/3dep_30m/x-093_y+40.tif": "miso_x-093_yp40.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+40.tif": "miso_x-093_yp40.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+40.tif": "miso_x-093_yp40.zip",
+    "rasters/miso/3dep_30m/x-093_y+41.tif": "miso_x-093_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+41.tif": "miso_x-093_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+41.tif": "miso_x-093_yp41.zip",
+    "rasters/miso/3dep_30m/x-093_y+42.tif": "miso_x-093_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+42.tif": "miso_x-093_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+42.tif": "miso_x-093_yp42.zip",
+    "rasters/miso/3dep_30m/x-093_y+43.tif": "miso_x-093_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+43.tif": "miso_x-093_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+43.tif": "miso_x-093_yp43.zip",
+    "rasters/miso/3dep_30m/x-093_y+44.tif": "miso_x-093_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+44.tif": "miso_x-093_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+44.tif": "miso_x-093_yp44.zip",
+    "rasters/miso/3dep_30m/x-093_y+45.tif": "miso_x-093_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+45.tif": "miso_x-093_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+45.tif": "miso_x-093_yp45.zip",
+    "rasters/miso/3dep_30m/x-093_y+46.tif": "miso_x-093_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+46.tif": "miso_x-093_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+46.tif": "miso_x-093_yp46.zip",
+    "rasters/miso/3dep_30m/x-093_y+47.tif": "miso_x-093_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+47.tif": "miso_x-093_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+47.tif": "miso_x-093_yp47.zip",
+    "rasters/miso/3dep_30m/x-093_y+48.tif": "miso_x-093_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-093_y+48.tif": "miso_x-093_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-093_y+48.tif": "miso_x-093_yp48.zip",
+    "rasters/miso/3dep_30m/x-094_y+29.tif": "miso_x-094_yp29.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+29.tif": "miso_x-094_yp29.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+29.tif": "miso_x-094_yp29.zip",
+    "rasters/miso/3dep_30m/x-094_y+30.tif": "miso_x-094_yp30.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+30.tif": "miso_x-094_yp30.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+30.tif": "miso_x-094_yp30.zip",
+    "rasters/miso/3dep_30m/x-094_y+31.tif": "miso_x-094_yp31.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+31.tif": "miso_x-094_yp31.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+31.tif": "miso_x-094_yp31.zip",
+    "rasters/miso/3dep_30m/x-094_y+32.tif": "miso_x-094_yp32.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+32.tif": "miso_x-094_yp32.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+32.tif": "miso_x-094_yp32.zip",
+    "rasters/miso/3dep_30m/x-094_y+33.tif": "miso_x-094_yp33.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+33.tif": "miso_x-094_yp33.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+33.tif": "miso_x-094_yp33.zip",
+    "rasters/miso/3dep_30m/x-094_y+34.tif": "miso_x-094_yp34.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+34.tif": "miso_x-094_yp34.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+34.tif": "miso_x-094_yp34.zip",
+    "rasters/miso/3dep_30m/x-094_y+35.tif": "miso_x-094_yp35.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+35.tif": "miso_x-094_yp35.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+35.tif": "miso_x-094_yp35.zip",
+    "rasters/miso/3dep_30m/x-094_y+36.tif": "miso_x-094_yp36.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+36.tif": "miso_x-094_yp36.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+36.tif": "miso_x-094_yp36.zip",
+    "rasters/miso/3dep_30m/x-094_y+38.tif": "miso_x-094_yp38.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+38.tif": "miso_x-094_yp38.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+38.tif": "miso_x-094_yp38.zip",
+    "rasters/miso/3dep_30m/x-094_y+39.tif": "miso_x-094_yp39.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+39.tif": "miso_x-094_yp39.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+39.tif": "miso_x-094_yp39.zip",
+    "rasters/miso/3dep_30m/x-094_y+40.tif": "miso_x-094_yp40.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+40.tif": "miso_x-094_yp40.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+40.tif": "miso_x-094_yp40.zip",
+    "rasters/miso/3dep_30m/x-094_y+41.tif": "miso_x-094_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+41.tif": "miso_x-094_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+41.tif": "miso_x-094_yp41.zip",
+    "rasters/miso/3dep_30m/x-094_y+42.tif": "miso_x-094_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+42.tif": "miso_x-094_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+42.tif": "miso_x-094_yp42.zip",
+    "rasters/miso/3dep_30m/x-094_y+43.tif": "miso_x-094_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+43.tif": "miso_x-094_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+43.tif": "miso_x-094_yp43.zip",
+    "rasters/miso/3dep_30m/x-094_y+44.tif": "miso_x-094_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+44.tif": "miso_x-094_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+44.tif": "miso_x-094_yp44.zip",
+    "rasters/miso/3dep_30m/x-094_y+45.tif": "miso_x-094_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+45.tif": "miso_x-094_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+45.tif": "miso_x-094_yp45.zip",
+    "rasters/miso/3dep_30m/x-094_y+46.tif": "miso_x-094_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+46.tif": "miso_x-094_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+46.tif": "miso_x-094_yp46.zip",
+    "rasters/miso/3dep_30m/x-094_y+47.tif": "miso_x-094_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+47.tif": "miso_x-094_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+47.tif": "miso_x-094_yp47.zip",
+    "rasters/miso/3dep_30m/x-094_y+48.tif": "miso_x-094_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-094_y+48.tif": "miso_x-094_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-094_y+48.tif": "miso_x-094_yp48.zip",
+    "rasters/miso/3dep_30m/x-095_y+29.tif": "miso_x-095_yp29.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+29.tif": "miso_x-095_yp29.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+29.tif": "miso_x-095_yp29.zip",
+    "rasters/miso/3dep_30m/x-095_y+30.tif": "miso_x-095_yp30.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+30.tif": "miso_x-095_yp30.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+30.tif": "miso_x-095_yp30.zip",
+    "rasters/miso/3dep_30m/x-095_y+31.tif": "miso_x-095_yp31.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+31.tif": "miso_x-095_yp31.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+31.tif": "miso_x-095_yp31.zip",
+    "rasters/miso/3dep_30m/x-095_y+32.tif": "miso_x-095_yp32.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+32.tif": "miso_x-095_yp32.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+32.tif": "miso_x-095_yp32.zip",
+    "rasters/miso/3dep_30m/x-095_y+33.tif": "miso_x-095_yp33.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+33.tif": "miso_x-095_yp33.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+33.tif": "miso_x-095_yp33.zip",
+    "rasters/miso/3dep_30m/x-095_y+39.tif": "miso_x-095_yp39.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+39.tif": "miso_x-095_yp39.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+39.tif": "miso_x-095_yp39.zip",
+    "rasters/miso/3dep_30m/x-095_y+40.tif": "miso_x-095_yp40.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+40.tif": "miso_x-095_yp40.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+40.tif": "miso_x-095_yp40.zip",
+    "rasters/miso/3dep_30m/x-095_y+41.tif": "miso_x-095_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+41.tif": "miso_x-095_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+41.tif": "miso_x-095_yp41.zip",
+    "rasters/miso/3dep_30m/x-095_y+42.tif": "miso_x-095_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+42.tif": "miso_x-095_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+42.tif": "miso_x-095_yp42.zip",
+    "rasters/miso/3dep_30m/x-095_y+43.tif": "miso_x-095_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+43.tif": "miso_x-095_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+43.tif": "miso_x-095_yp43.zip",
+    "rasters/miso/3dep_30m/x-095_y+44.tif": "miso_x-095_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+44.tif": "miso_x-095_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+44.tif": "miso_x-095_yp44.zip",
+    "rasters/miso/3dep_30m/x-095_y+45.tif": "miso_x-095_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+45.tif": "miso_x-095_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+45.tif": "miso_x-095_yp45.zip",
+    "rasters/miso/3dep_30m/x-095_y+46.tif": "miso_x-095_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+46.tif": "miso_x-095_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+46.tif": "miso_x-095_yp46.zip",
+    "rasters/miso/3dep_30m/x-095_y+47.tif": "miso_x-095_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+47.tif": "miso_x-095_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+47.tif": "miso_x-095_yp47.zip",
+    "rasters/miso/3dep_30m/x-095_y+48.tif": "miso_x-095_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+48.tif": "miso_x-095_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+48.tif": "miso_x-095_yp48.zip",
+    "rasters/miso/3dep_30m/x-095_y+49.tif": "miso_x-095_yp49.zip",
+    "rasters/miso/nlcd_2024_30m/x-095_y+49.tif": "miso_x-095_yp49.zip",
+    "rasters/miso/nwi_thematic_30m/x-095_y+49.tif": "miso_x-095_yp49.zip",
+    "rasters/miso/3dep_30m/x-096_y+29.tif": "miso_x-096_yp29.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+29.tif": "miso_x-096_yp29.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+29.tif": "miso_x-096_yp29.zip",
+    "rasters/miso/3dep_30m/x-096_y+30.tif": "miso_x-096_yp30.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+30.tif": "miso_x-096_yp30.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+30.tif": "miso_x-096_yp30.zip",
+    "rasters/miso/3dep_30m/x-096_y+31.tif": "miso_x-096_yp31.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+31.tif": "miso_x-096_yp31.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+31.tif": "miso_x-096_yp31.zip",
+    "rasters/miso/3dep_30m/x-096_y+40.tif": "miso_x-096_yp40.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+40.tif": "miso_x-096_yp40.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+40.tif": "miso_x-096_yp40.zip",
+    "rasters/miso/3dep_30m/x-096_y+41.tif": "miso_x-096_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+41.tif": "miso_x-096_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+41.tif": "miso_x-096_yp41.zip",
+    "rasters/miso/3dep_30m/x-096_y+42.tif": "miso_x-096_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+42.tif": "miso_x-096_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+42.tif": "miso_x-096_yp42.zip",
+    "rasters/miso/3dep_30m/x-096_y+43.tif": "miso_x-096_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+43.tif": "miso_x-096_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+43.tif": "miso_x-096_yp43.zip",
+    "rasters/miso/3dep_30m/x-096_y+44.tif": "miso_x-096_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+44.tif": "miso_x-096_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+44.tif": "miso_x-096_yp44.zip",
+    "rasters/miso/3dep_30m/x-096_y+45.tif": "miso_x-096_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+45.tif": "miso_x-096_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+45.tif": "miso_x-096_yp45.zip",
+    "rasters/miso/3dep_30m/x-096_y+46.tif": "miso_x-096_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+46.tif": "miso_x-096_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+46.tif": "miso_x-096_yp46.zip",
+    "rasters/miso/3dep_30m/x-096_y+47.tif": "miso_x-096_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+47.tif": "miso_x-096_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+47.tif": "miso_x-096_yp47.zip",
+    "rasters/miso/3dep_30m/x-096_y+48.tif": "miso_x-096_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+48.tif": "miso_x-096_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+48.tif": "miso_x-096_yp48.zip",
+    "rasters/miso/3dep_30m/x-096_y+49.tif": "miso_x-096_yp49.zip",
+    "rasters/miso/nlcd_2024_30m/x-096_y+49.tif": "miso_x-096_yp49.zip",
+    "rasters/miso/nwi_thematic_30m/x-096_y+49.tif": "miso_x-096_yp49.zip",
+    "rasters/miso/3dep_30m/x-097_y+30.tif": "miso_x-097_yp30.zip",
+    "rasters/miso/nlcd_2024_30m/x-097_y+30.tif": "miso_x-097_yp30.zip",
+    "rasters/miso/nwi_thematic_30m/x-097_y+30.tif": "miso_x-097_yp30.zip",
+    "rasters/miso/3dep_30m/x-097_y+31.tif": "miso_x-097_yp31.zip",
+    "rasters/miso/nlcd_2024_30m/x-097_y+31.tif": "miso_x-097_yp31.zip",
+    "rasters/miso/nwi_thematic_30m/x-097_y+31.tif": "miso_x-097_yp31.zip",
+    "rasters/miso/3dep_30m/x-097_y+41.tif": "miso_x-097_yp41.zip",
+    "rasters/miso/nlcd_2024_30m/x-097_y+41.tif": "miso_x-097_yp41.zip",
+    "rasters/miso/nwi_thematic_30m/x-097_y+41.tif": "miso_x-097_yp41.zip",
+    "rasters/miso/3dep_30m/x-097_y+42.tif": "miso_x-097_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-097_y+42.tif": "miso_x-097_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-097_y+42.tif": "miso_x-097_yp42.zip",
+    "rasters/miso/3dep_30m/x-097_y+43.tif": "miso_x-097_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-097_y+43.tif": "miso_x-097_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-097_y+43.tif": "miso_x-097_yp43.zip",
+    "rasters/miso/3dep_30m/x-097_y+44.tif": "miso_x-097_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-097_y+44.tif": "miso_x-097_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-097_y+44.tif": "miso_x-097_yp44.zip",
+    "rasters/miso/3dep_30m/x-097_y+45.tif": "miso_x-097_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-097_y+45.tif": "miso_x-097_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-097_y+45.tif": "miso_x-097_yp45.zip",
+    "rasters/miso/3dep_30m/x-097_y+46.tif": "miso_x-097_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-097_y+46.tif": "miso_x-097_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-097_y+46.tif": "miso_x-097_yp46.zip",
+    "rasters/miso/3dep_30m/x-097_y+47.tif": "miso_x-097_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-097_y+47.tif": "miso_x-097_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-097_y+47.tif": "miso_x-097_yp47.zip",
+    "rasters/miso/3dep_30m/x-097_y+48.tif": "miso_x-097_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-097_y+48.tif": "miso_x-097_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-097_y+48.tif": "miso_x-097_yp48.zip",
+    "rasters/miso/3dep_30m/x-098_y+42.tif": "miso_x-098_yp42.zip",
+    "rasters/miso/nlcd_2024_30m/x-098_y+42.tif": "miso_x-098_yp42.zip",
+    "rasters/miso/nwi_thematic_30m/x-098_y+42.tif": "miso_x-098_yp42.zip",
+    "rasters/miso/3dep_30m/x-098_y+43.tif": "miso_x-098_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-098_y+43.tif": "miso_x-098_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-098_y+43.tif": "miso_x-098_yp43.zip",
+    "rasters/miso/3dep_30m/x-098_y+44.tif": "miso_x-098_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-098_y+44.tif": "miso_x-098_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-098_y+44.tif": "miso_x-098_yp44.zip",
+    "rasters/miso/3dep_30m/x-098_y+45.tif": "miso_x-098_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-098_y+45.tif": "miso_x-098_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-098_y+45.tif": "miso_x-098_yp45.zip",
+    "rasters/miso/3dep_30m/x-098_y+46.tif": "miso_x-098_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-098_y+46.tif": "miso_x-098_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-098_y+46.tif": "miso_x-098_yp46.zip",
+    "rasters/miso/3dep_30m/x-098_y+47.tif": "miso_x-098_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-098_y+47.tif": "miso_x-098_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-098_y+47.tif": "miso_x-098_yp47.zip",
+    "rasters/miso/3dep_30m/x-098_y+48.tif": "miso_x-098_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-098_y+48.tif": "miso_x-098_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-098_y+48.tif": "miso_x-098_yp48.zip",
+    "rasters/miso/3dep_30m/x-099_y+43.tif": "miso_x-099_yp43.zip",
+    "rasters/miso/nlcd_2024_30m/x-099_y+43.tif": "miso_x-099_yp43.zip",
+    "rasters/miso/nwi_thematic_30m/x-099_y+43.tif": "miso_x-099_yp43.zip",
+    "rasters/miso/3dep_30m/x-099_y+44.tif": "miso_x-099_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-099_y+44.tif": "miso_x-099_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-099_y+44.tif": "miso_x-099_yp44.zip",
+    "rasters/miso/3dep_30m/x-099_y+45.tif": "miso_x-099_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-099_y+45.tif": "miso_x-099_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-099_y+45.tif": "miso_x-099_yp45.zip",
+    "rasters/miso/3dep_30m/x-099_y+46.tif": "miso_x-099_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-099_y+46.tif": "miso_x-099_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-099_y+46.tif": "miso_x-099_yp46.zip",
+    "rasters/miso/3dep_30m/x-099_y+47.tif": "miso_x-099_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-099_y+47.tif": "miso_x-099_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-099_y+47.tif": "miso_x-099_yp47.zip",
+    "rasters/miso/3dep_30m/x-099_y+48.tif": "miso_x-099_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-099_y+48.tif": "miso_x-099_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-099_y+48.tif": "miso_x-099_yp48.zip",
+    "rasters/miso/3dep_30m/x-100_y+44.tif": "miso_x-100_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-100_y+44.tif": "miso_x-100_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-100_y+44.tif": "miso_x-100_yp44.zip",
+    "rasters/miso/3dep_30m/x-100_y+45.tif": "miso_x-100_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-100_y+45.tif": "miso_x-100_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-100_y+45.tif": "miso_x-100_yp45.zip",
+    "rasters/miso/3dep_30m/x-100_y+46.tif": "miso_x-100_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-100_y+46.tif": "miso_x-100_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-100_y+46.tif": "miso_x-100_yp46.zip",
+    "rasters/miso/3dep_30m/x-100_y+47.tif": "miso_x-100_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-100_y+47.tif": "miso_x-100_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-100_y+47.tif": "miso_x-100_yp47.zip",
+    "rasters/miso/3dep_30m/x-100_y+48.tif": "miso_x-100_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-100_y+48.tif": "miso_x-100_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-100_y+48.tif": "miso_x-100_yp48.zip",
+    "rasters/miso/3dep_30m/x-101_y+44.tif": "miso_x-101_yp44.zip",
+    "rasters/miso/nlcd_2024_30m/x-101_y+44.tif": "miso_x-101_yp44.zip",
+    "rasters/miso/nwi_thematic_30m/x-101_y+44.tif": "miso_x-101_yp44.zip",
+    "rasters/miso/3dep_30m/x-101_y+45.tif": "miso_x-101_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-101_y+45.tif": "miso_x-101_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-101_y+45.tif": "miso_x-101_yp45.zip",
+    "rasters/miso/3dep_30m/x-101_y+46.tif": "miso_x-101_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-101_y+46.tif": "miso_x-101_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-101_y+46.tif": "miso_x-101_yp46.zip",
+    "rasters/miso/3dep_30m/x-101_y+47.tif": "miso_x-101_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-101_y+47.tif": "miso_x-101_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-101_y+47.tif": "miso_x-101_yp47.zip",
+    "rasters/miso/3dep_30m/x-101_y+48.tif": "miso_x-101_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-101_y+48.tif": "miso_x-101_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-101_y+48.tif": "miso_x-101_yp48.zip",
+    "rasters/miso/3dep_30m/x-102_y+45.tif": "miso_x-102_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-102_y+45.tif": "miso_x-102_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-102_y+45.tif": "miso_x-102_yp45.zip",
+    "rasters/miso/3dep_30m/x-102_y+46.tif": "miso_x-102_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-102_y+46.tif": "miso_x-102_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-102_y+46.tif": "miso_x-102_yp46.zip",
+    "rasters/miso/3dep_30m/x-102_y+47.tif": "miso_x-102_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-102_y+47.tif": "miso_x-102_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-102_y+47.tif": "miso_x-102_yp47.zip",
+    "rasters/miso/3dep_30m/x-102_y+48.tif": "miso_x-102_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-102_y+48.tif": "miso_x-102_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-102_y+48.tif": "miso_x-102_yp48.zip",
+    "rasters/miso/3dep_30m/x-103_y+45.tif": "miso_x-103_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-103_y+45.tif": "miso_x-103_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-103_y+45.tif": "miso_x-103_yp45.zip",
+    "rasters/miso/3dep_30m/x-103_y+46.tif": "miso_x-103_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-103_y+46.tif": "miso_x-103_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-103_y+46.tif": "miso_x-103_yp46.zip",
+    "rasters/miso/3dep_30m/x-103_y+47.tif": "miso_x-103_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-103_y+47.tif": "miso_x-103_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-103_y+47.tif": "miso_x-103_yp47.zip",
+    "rasters/miso/3dep_30m/x-103_y+48.tif": "miso_x-103_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-103_y+48.tif": "miso_x-103_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-103_y+48.tif": "miso_x-103_yp48.zip",
+    "rasters/miso/3dep_30m/x-104_y+45.tif": "miso_x-104_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-104_y+45.tif": "miso_x-104_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-104_y+45.tif": "miso_x-104_yp45.zip",
+    "rasters/miso/3dep_30m/x-104_y+46.tif": "miso_x-104_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-104_y+46.tif": "miso_x-104_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-104_y+46.tif": "miso_x-104_yp46.zip",
+    "rasters/miso/3dep_30m/x-104_y+47.tif": "miso_x-104_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-104_y+47.tif": "miso_x-104_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-104_y+47.tif": "miso_x-104_yp47.zip",
+    "rasters/miso/3dep_30m/x-104_y+48.tif": "miso_x-104_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-104_y+48.tif": "miso_x-104_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-104_y+48.tif": "miso_x-104_yp48.zip",
+    "rasters/miso/3dep_30m/x-105_y+45.tif": "miso_x-105_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-105_y+45.tif": "miso_x-105_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-105_y+45.tif": "miso_x-105_yp45.zip",
+    "rasters/miso/3dep_30m/x-105_y+46.tif": "miso_x-105_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-105_y+46.tif": "miso_x-105_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-105_y+46.tif": "miso_x-105_yp46.zip",
+    "rasters/miso/3dep_30m/x-105_y+47.tif": "miso_x-105_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-105_y+47.tif": "miso_x-105_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-105_y+47.tif": "miso_x-105_yp47.zip",
+    "rasters/miso/3dep_30m/x-105_y+48.tif": "miso_x-105_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-105_y+48.tif": "miso_x-105_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-105_y+48.tif": "miso_x-105_yp48.zip",
+    "rasters/miso/3dep_30m/x-106_y+46.tif": "miso_x-106_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-106_y+46.tif": "miso_x-106_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-106_y+46.tif": "miso_x-106_yp46.zip",
+    "rasters/miso/3dep_30m/x-106_y+47.tif": "miso_x-106_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-106_y+47.tif": "miso_x-106_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-106_y+47.tif": "miso_x-106_yp47.zip",
+    "rasters/miso/3dep_30m/x-106_y+48.tif": "miso_x-106_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-106_y+48.tif": "miso_x-106_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-106_y+48.tif": "miso_x-106_yp48.zip",
+    "rasters/miso/3dep_30m/x-107_y+45.tif": "miso_x-107_yp45.zip",
+    "rasters/miso/nlcd_2024_30m/x-107_y+45.tif": "miso_x-107_yp45.zip",
+    "rasters/miso/nwi_thematic_30m/x-107_y+45.tif": "miso_x-107_yp45.zip",
+    "rasters/miso/3dep_30m/x-107_y+46.tif": "miso_x-107_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-107_y+46.tif": "miso_x-107_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-107_y+46.tif": "miso_x-107_yp46.zip",
+    "rasters/miso/3dep_30m/x-107_y+47.tif": "miso_x-107_yp47.zip",
+    "rasters/miso/nlcd_2024_30m/x-107_y+47.tif": "miso_x-107_yp47.zip",
+    "rasters/miso/nwi_thematic_30m/x-107_y+47.tif": "miso_x-107_yp47.zip",
+    "rasters/miso/3dep_30m/x-107_y+48.tif": "miso_x-107_yp48.zip",
+    "rasters/miso/nlcd_2024_30m/x-107_y+48.tif": "miso_x-107_yp48.zip",
+    "rasters/miso/nwi_thematic_30m/x-107_y+48.tif": "miso_x-107_yp48.zip",
+    "rasters/miso/3dep_30m/x-108_y+46.tif": "miso_x-108_yp46.zip",
+    "rasters/miso/nlcd_2024_30m/x-108_y+46.tif": "miso_x-108_yp46.zip",
+    "rasters/miso/nwi_thematic_30m/x-108_y+46.tif": "miso_x-108_yp46.zip",
+    "vectors/nyiso_padus_protected_areas.gpkg": "nyiso_protected.zip",
+    "rasters/nyiso/3dep_30m/x-072.00_y+40.50.tif": "nyiso_x-072_00_yp40_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-072.00_y+40.50.tif": "nyiso_x-072_00_yp40_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-072.00_y+40.50.tif": "nyiso_x-072_00_yp40_50.zip",
+    "rasters/nyiso/3dep_30m/x-072.00_y+41.00.tif": "nyiso_x-072_00_yp41_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-072.00_y+41.00.tif": "nyiso_x-072_00_yp41_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-072.00_y+41.00.tif": "nyiso_x-072_00_yp41_00.zip",
+    "rasters/nyiso/3dep_30m/x-072.50_y+40.50.tif": "nyiso_x-072_50_yp40_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-072.50_y+40.50.tif": "nyiso_x-072_50_yp40_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-072.50_y+40.50.tif": "nyiso_x-072_50_yp40_50.zip",
+    "rasters/nyiso/3dep_30m/x-072.50_y+41.00.tif": "nyiso_x-072_50_yp41_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-072.50_y+41.00.tif": "nyiso_x-072_50_yp41_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-072.50_y+41.00.tif": "nyiso_x-072_50_yp41_00.zip",
+    "rasters/nyiso/3dep_30m/x-073.00_y+40.50.tif": "nyiso_x-073_00_yp40_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-073.00_y+40.50.tif": "nyiso_x-073_00_yp40_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-073.00_y+40.50.tif": "nyiso_x-073_00_yp40_50.zip",
+    "rasters/nyiso/3dep_30m/x-073.00_y+41.00.tif": "nyiso_x-073_00_yp41_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-073.00_y+41.00.tif": "nyiso_x-073_00_yp41_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-073.00_y+41.00.tif": "nyiso_x-073_00_yp41_00.zip",
+    "rasters/nyiso/3dep_30m/x-073.50_y+40.50.tif": "nyiso_x-073_50_yp40_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-073.50_y+40.50.tif": "nyiso_x-073_50_yp40_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-073.50_y+40.50.tif": "nyiso_x-073_50_yp40_50.zip",
+    "rasters/nyiso/3dep_30m/x-073.50_y+41.00.tif": "nyiso_x-073_50_yp41_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-073.50_y+41.00.tif": "nyiso_x-073_50_yp41_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-073.50_y+41.00.tif": "nyiso_x-073_50_yp41_00.zip",
+    "rasters/nyiso/3dep_30m/x-073.50_y+41.50.tif": "nyiso_x-073_50_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-073.50_y+41.50.tif": "nyiso_x-073_50_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-073.50_y+41.50.tif": "nyiso_x-073_50_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-073.50_y+42.00.tif": "nyiso_x-073_50_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-073.50_y+42.00.tif": "nyiso_x-073_50_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-073.50_y+42.00.tif": "nyiso_x-073_50_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-073.50_y+42.50.tif": "nyiso_x-073_50_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-073.50_y+42.50.tif": "nyiso_x-073_50_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-073.50_y+42.50.tif": "nyiso_x-073_50_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-073.50_y+43.00.tif": "nyiso_x-073_50_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-073.50_y+43.00.tif": "nyiso_x-073_50_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-073.50_y+43.00.tif": "nyiso_x-073_50_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-073.50_y+43.50.tif": "nyiso_x-073_50_yp43_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-073.50_y+43.50.tif": "nyiso_x-073_50_yp43_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-073.50_y+43.50.tif": "nyiso_x-073_50_yp43_50.zip",
+    "rasters/nyiso/3dep_30m/x-073.50_y+44.00.tif": "nyiso_x-073_50_yp44_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-073.50_y+44.00.tif": "nyiso_x-073_50_yp44_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-073.50_y+44.00.tif": "nyiso_x-073_50_yp44_00.zip",
+    "rasters/nyiso/3dep_30m/x-073.50_y+44.50.tif": "nyiso_x-073_50_yp44_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-073.50_y+44.50.tif": "nyiso_x-073_50_yp44_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-073.50_y+44.50.tif": "nyiso_x-073_50_yp44_50.zip",
+    "rasters/nyiso/3dep_30m/x-073.50_y+45.00.tif": "nyiso_x-073_50_yp45_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-073.50_y+45.00.tif": "nyiso_x-073_50_yp45_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-073.50_y+45.00.tif": "nyiso_x-073_50_yp45_00.zip",
+    "rasters/nyiso/3dep_30m/x-074.00_y+40.50.tif": "nyiso_x-074_00_yp40_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.00_y+40.50.tif": "nyiso_x-074_00_yp40_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.00_y+40.50.tif": "nyiso_x-074_00_yp40_50.zip",
+    "rasters/nyiso/3dep_30m/x-074.00_y+41.00.tif": "nyiso_x-074_00_yp41_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.00_y+41.00.tif": "nyiso_x-074_00_yp41_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.00_y+41.00.tif": "nyiso_x-074_00_yp41_00.zip",
+    "rasters/nyiso/3dep_30m/x-074.00_y+41.50.tif": "nyiso_x-074_00_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.00_y+41.50.tif": "nyiso_x-074_00_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.00_y+41.50.tif": "nyiso_x-074_00_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-074.00_y+42.00.tif": "nyiso_x-074_00_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.00_y+42.00.tif": "nyiso_x-074_00_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.00_y+42.00.tif": "nyiso_x-074_00_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-074.00_y+42.50.tif": "nyiso_x-074_00_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.00_y+42.50.tif": "nyiso_x-074_00_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.00_y+42.50.tif": "nyiso_x-074_00_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-074.00_y+43.00.tif": "nyiso_x-074_00_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.00_y+43.00.tif": "nyiso_x-074_00_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.00_y+43.00.tif": "nyiso_x-074_00_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-074.00_y+43.50.tif": "nyiso_x-074_00_yp43_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.00_y+43.50.tif": "nyiso_x-074_00_yp43_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.00_y+43.50.tif": "nyiso_x-074_00_yp43_50.zip",
+    "rasters/nyiso/3dep_30m/x-074.00_y+44.00.tif": "nyiso_x-074_00_yp44_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.00_y+44.00.tif": "nyiso_x-074_00_yp44_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.00_y+44.00.tif": "nyiso_x-074_00_yp44_00.zip",
+    "rasters/nyiso/3dep_30m/x-074.00_y+44.50.tif": "nyiso_x-074_00_yp44_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.00_y+44.50.tif": "nyiso_x-074_00_yp44_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.00_y+44.50.tif": "nyiso_x-074_00_yp44_50.zip",
+    "rasters/nyiso/3dep_30m/x-074.00_y+45.00.tif": "nyiso_x-074_00_yp45_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.00_y+45.00.tif": "nyiso_x-074_00_yp45_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.00_y+45.00.tif": "nyiso_x-074_00_yp45_00.zip",
+    "rasters/nyiso/3dep_30m/x-074.50_y+40.50.tif": "nyiso_x-074_50_yp40_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.50_y+40.50.tif": "nyiso_x-074_50_yp40_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.50_y+40.50.tif": "nyiso_x-074_50_yp40_50.zip",
+    "rasters/nyiso/3dep_30m/x-074.50_y+41.00.tif": "nyiso_x-074_50_yp41_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.50_y+41.00.tif": "nyiso_x-074_50_yp41_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.50_y+41.00.tif": "nyiso_x-074_50_yp41_00.zip",
+    "rasters/nyiso/3dep_30m/x-074.50_y+41.50.tif": "nyiso_x-074_50_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.50_y+41.50.tif": "nyiso_x-074_50_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.50_y+41.50.tif": "nyiso_x-074_50_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-074.50_y+42.00.tif": "nyiso_x-074_50_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.50_y+42.00.tif": "nyiso_x-074_50_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.50_y+42.00.tif": "nyiso_x-074_50_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-074.50_y+42.50.tif": "nyiso_x-074_50_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.50_y+42.50.tif": "nyiso_x-074_50_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.50_y+42.50.tif": "nyiso_x-074_50_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-074.50_y+43.00.tif": "nyiso_x-074_50_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.50_y+43.00.tif": "nyiso_x-074_50_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.50_y+43.00.tif": "nyiso_x-074_50_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-074.50_y+43.50.tif": "nyiso_x-074_50_yp43_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.50_y+43.50.tif": "nyiso_x-074_50_yp43_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.50_y+43.50.tif": "nyiso_x-074_50_yp43_50.zip",
+    "rasters/nyiso/3dep_30m/x-074.50_y+44.00.tif": "nyiso_x-074_50_yp44_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.50_y+44.00.tif": "nyiso_x-074_50_yp44_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.50_y+44.00.tif": "nyiso_x-074_50_yp44_00.zip",
+    "rasters/nyiso/3dep_30m/x-074.50_y+44.50.tif": "nyiso_x-074_50_yp44_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-074.50_y+44.50.tif": "nyiso_x-074_50_yp44_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-074.50_y+44.50.tif": "nyiso_x-074_50_yp44_50.zip",
+    "rasters/nyiso/3dep_30m/x-075.00_y+41.00.tif": "nyiso_x-075_00_yp41_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.00_y+41.00.tif": "nyiso_x-075_00_yp41_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.00_y+41.00.tif": "nyiso_x-075_00_yp41_00.zip",
+    "rasters/nyiso/3dep_30m/x-075.00_y+41.50.tif": "nyiso_x-075_00_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.00_y+41.50.tif": "nyiso_x-075_00_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.00_y+41.50.tif": "nyiso_x-075_00_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-075.00_y+42.00.tif": "nyiso_x-075_00_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.00_y+42.00.tif": "nyiso_x-075_00_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.00_y+42.00.tif": "nyiso_x-075_00_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-075.00_y+42.50.tif": "nyiso_x-075_00_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.00_y+42.50.tif": "nyiso_x-075_00_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.00_y+42.50.tif": "nyiso_x-075_00_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-075.00_y+43.00.tif": "nyiso_x-075_00_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.00_y+43.00.tif": "nyiso_x-075_00_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.00_y+43.00.tif": "nyiso_x-075_00_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-075.00_y+43.50.tif": "nyiso_x-075_00_yp43_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.00_y+43.50.tif": "nyiso_x-075_00_yp43_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.00_y+43.50.tif": "nyiso_x-075_00_yp43_50.zip",
+    "rasters/nyiso/3dep_30m/x-075.00_y+44.00.tif": "nyiso_x-075_00_yp44_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.00_y+44.00.tif": "nyiso_x-075_00_yp44_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.00_y+44.00.tif": "nyiso_x-075_00_yp44_00.zip",
+    "rasters/nyiso/3dep_30m/x-075.00_y+44.50.tif": "nyiso_x-075_00_yp44_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.00_y+44.50.tif": "nyiso_x-075_00_yp44_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.00_y+44.50.tif": "nyiso_x-075_00_yp44_50.zip",
+    "rasters/nyiso/3dep_30m/x-075.00_y+45.00.tif": "nyiso_x-075_00_yp45_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.00_y+45.00.tif": "nyiso_x-075_00_yp45_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.00_y+45.00.tif": "nyiso_x-075_00_yp45_00.zip",
+    "rasters/nyiso/3dep_30m/x-075.50_y+41.50.tif": "nyiso_x-075_50_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.50_y+41.50.tif": "nyiso_x-075_50_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.50_y+41.50.tif": "nyiso_x-075_50_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-075.50_y+42.00.tif": "nyiso_x-075_50_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.50_y+42.00.tif": "nyiso_x-075_50_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.50_y+42.00.tif": "nyiso_x-075_50_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-075.50_y+42.50.tif": "nyiso_x-075_50_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.50_y+42.50.tif": "nyiso_x-075_50_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.50_y+42.50.tif": "nyiso_x-075_50_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-075.50_y+43.00.tif": "nyiso_x-075_50_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.50_y+43.00.tif": "nyiso_x-075_50_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.50_y+43.00.tif": "nyiso_x-075_50_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-075.50_y+43.50.tif": "nyiso_x-075_50_yp43_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.50_y+43.50.tif": "nyiso_x-075_50_yp43_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.50_y+43.50.tif": "nyiso_x-075_50_yp43_50.zip",
+    "rasters/nyiso/3dep_30m/x-075.50_y+44.00.tif": "nyiso_x-075_50_yp44_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.50_y+44.00.tif": "nyiso_x-075_50_yp44_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.50_y+44.00.tif": "nyiso_x-075_50_yp44_00.zip",
+    "rasters/nyiso/3dep_30m/x-075.50_y+44.50.tif": "nyiso_x-075_50_yp44_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-075.50_y+44.50.tif": "nyiso_x-075_50_yp44_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-075.50_y+44.50.tif": "nyiso_x-075_50_yp44_50.zip",
+    "rasters/nyiso/3dep_30m/x-076.00_y+41.50.tif": "nyiso_x-076_00_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.00_y+41.50.tif": "nyiso_x-076_00_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.00_y+41.50.tif": "nyiso_x-076_00_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-076.00_y+42.00.tif": "nyiso_x-076_00_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.00_y+42.00.tif": "nyiso_x-076_00_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.00_y+42.00.tif": "nyiso_x-076_00_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-076.00_y+42.50.tif": "nyiso_x-076_00_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.00_y+42.50.tif": "nyiso_x-076_00_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.00_y+42.50.tif": "nyiso_x-076_00_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-076.00_y+43.00.tif": "nyiso_x-076_00_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.00_y+43.00.tif": "nyiso_x-076_00_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.00_y+43.00.tif": "nyiso_x-076_00_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-076.00_y+43.50.tif": "nyiso_x-076_00_yp43_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.00_y+43.50.tif": "nyiso_x-076_00_yp43_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.00_y+43.50.tif": "nyiso_x-076_00_yp43_50.zip",
+    "rasters/nyiso/3dep_30m/x-076.00_y+44.00.tif": "nyiso_x-076_00_yp44_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.00_y+44.00.tif": "nyiso_x-076_00_yp44_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.00_y+44.00.tif": "nyiso_x-076_00_yp44_00.zip",
+    "rasters/nyiso/3dep_30m/x-076.00_y+44.50.tif": "nyiso_x-076_00_yp44_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.00_y+44.50.tif": "nyiso_x-076_00_yp44_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.00_y+44.50.tif": "nyiso_x-076_00_yp44_50.zip",
+    "rasters/nyiso/3dep_30m/x-076.50_y+41.50.tif": "nyiso_x-076_50_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.50_y+41.50.tif": "nyiso_x-076_50_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.50_y+41.50.tif": "nyiso_x-076_50_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-076.50_y+42.00.tif": "nyiso_x-076_50_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.50_y+42.00.tif": "nyiso_x-076_50_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.50_y+42.00.tif": "nyiso_x-076_50_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-076.50_y+42.50.tif": "nyiso_x-076_50_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.50_y+42.50.tif": "nyiso_x-076_50_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.50_y+42.50.tif": "nyiso_x-076_50_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-076.50_y+43.00.tif": "nyiso_x-076_50_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.50_y+43.00.tif": "nyiso_x-076_50_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.50_y+43.00.tif": "nyiso_x-076_50_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-076.50_y+43.50.tif": "nyiso_x-076_50_yp43_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.50_y+43.50.tif": "nyiso_x-076_50_yp43_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.50_y+43.50.tif": "nyiso_x-076_50_yp43_50.zip",
+    "rasters/nyiso/3dep_30m/x-076.50_y+44.00.tif": "nyiso_x-076_50_yp44_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-076.50_y+44.00.tif": "nyiso_x-076_50_yp44_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-076.50_y+44.00.tif": "nyiso_x-076_50_yp44_00.zip",
+    "rasters/nyiso/3dep_30m/x-077.00_y+41.50.tif": "nyiso_x-077_00_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-077.00_y+41.50.tif": "nyiso_x-077_00_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-077.00_y+41.50.tif": "nyiso_x-077_00_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-077.00_y+42.00.tif": "nyiso_x-077_00_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-077.00_y+42.00.tif": "nyiso_x-077_00_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-077.00_y+42.00.tif": "nyiso_x-077_00_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-077.00_y+42.50.tif": "nyiso_x-077_00_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-077.00_y+42.50.tif": "nyiso_x-077_00_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-077.00_y+42.50.tif": "nyiso_x-077_00_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-077.00_y+43.00.tif": "nyiso_x-077_00_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-077.00_y+43.00.tif": "nyiso_x-077_00_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-077.00_y+43.00.tif": "nyiso_x-077_00_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-077.50_y+41.50.tif": "nyiso_x-077_50_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-077.50_y+41.50.tif": "nyiso_x-077_50_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-077.50_y+41.50.tif": "nyiso_x-077_50_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-077.50_y+42.00.tif": "nyiso_x-077_50_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-077.50_y+42.00.tif": "nyiso_x-077_50_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-077.50_y+42.00.tif": "nyiso_x-077_50_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-077.50_y+42.50.tif": "nyiso_x-077_50_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-077.50_y+42.50.tif": "nyiso_x-077_50_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-077.50_y+42.50.tif": "nyiso_x-077_50_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-077.50_y+43.00.tif": "nyiso_x-077_50_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-077.50_y+43.00.tif": "nyiso_x-077_50_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-077.50_y+43.00.tif": "nyiso_x-077_50_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-078.00_y+41.50.tif": "nyiso_x-078_00_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-078.00_y+41.50.tif": "nyiso_x-078_00_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-078.00_y+41.50.tif": "nyiso_x-078_00_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-078.00_y+42.00.tif": "nyiso_x-078_00_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-078.00_y+42.00.tif": "nyiso_x-078_00_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-078.00_y+42.00.tif": "nyiso_x-078_00_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-078.00_y+42.50.tif": "nyiso_x-078_00_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-078.00_y+42.50.tif": "nyiso_x-078_00_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-078.00_y+42.50.tif": "nyiso_x-078_00_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-078.00_y+43.00.tif": "nyiso_x-078_00_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-078.00_y+43.00.tif": "nyiso_x-078_00_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-078.00_y+43.00.tif": "nyiso_x-078_00_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-078.50_y+41.50.tif": "nyiso_x-078_50_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-078.50_y+41.50.tif": "nyiso_x-078_50_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-078.50_y+41.50.tif": "nyiso_x-078_50_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-078.50_y+42.00.tif": "nyiso_x-078_50_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-078.50_y+42.00.tif": "nyiso_x-078_50_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-078.50_y+42.00.tif": "nyiso_x-078_50_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-078.50_y+42.50.tif": "nyiso_x-078_50_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-078.50_y+42.50.tif": "nyiso_x-078_50_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-078.50_y+42.50.tif": "nyiso_x-078_50_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-078.50_y+43.00.tif": "nyiso_x-078_50_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-078.50_y+43.00.tif": "nyiso_x-078_50_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-078.50_y+43.00.tif": "nyiso_x-078_50_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-079.00_y+41.50.tif": "nyiso_x-079_00_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-079.00_y+41.50.tif": "nyiso_x-079_00_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-079.00_y+41.50.tif": "nyiso_x-079_00_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-079.00_y+42.00.tif": "nyiso_x-079_00_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-079.00_y+42.00.tif": "nyiso_x-079_00_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-079.00_y+42.00.tif": "nyiso_x-079_00_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-079.00_y+42.50.tif": "nyiso_x-079_00_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-079.00_y+42.50.tif": "nyiso_x-079_00_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-079.00_y+42.50.tif": "nyiso_x-079_00_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-079.00_y+43.00.tif": "nyiso_x-079_00_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-079.00_y+43.00.tif": "nyiso_x-079_00_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-079.00_y+43.00.tif": "nyiso_x-079_00_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-079.50_y+41.50.tif": "nyiso_x-079_50_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-079.50_y+41.50.tif": "nyiso_x-079_50_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-079.50_y+41.50.tif": "nyiso_x-079_50_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-079.50_y+42.00.tif": "nyiso_x-079_50_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-079.50_y+42.00.tif": "nyiso_x-079_50_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-079.50_y+42.00.tif": "nyiso_x-079_50_yp42_00.zip",
+    "rasters/nyiso/3dep_30m/x-079.50_y+42.50.tif": "nyiso_x-079_50_yp42_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-079.50_y+42.50.tif": "nyiso_x-079_50_yp42_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-079.50_y+42.50.tif": "nyiso_x-079_50_yp42_50.zip",
+    "rasters/nyiso/3dep_30m/x-079.50_y+43.00.tif": "nyiso_x-079_50_yp43_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-079.50_y+43.00.tif": "nyiso_x-079_50_yp43_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-079.50_y+43.00.tif": "nyiso_x-079_50_yp43_00.zip",
+    "rasters/nyiso/3dep_30m/x-080.00_y+41.50.tif": "nyiso_x-080_00_yp41_50.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-080.00_y+41.50.tif": "nyiso_x-080_00_yp41_50.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-080.00_y+41.50.tif": "nyiso_x-080_00_yp41_50.zip",
+    "rasters/nyiso/3dep_30m/x-080.00_y+42.00.tif": "nyiso_x-080_00_yp42_00.zip",
+    "rasters/nyiso/nlcd_2024_30m/x-080.00_y+42.00.tif": "nyiso_x-080_00_yp42_00.zip",
+    "rasters/nyiso/nwi_thematic_30m/x-080.00_y+42.00.tif": "nyiso_x-080_00_yp42_00.zip"
+  },
+  "assets": {
+    "gis_core.zip": {
+      "sha256": "c69751a01db18538dea83bd67e2f7ba2d73cf2f450f248c107ed6eb37f3c12a7",
+      "bytes": 1477975
+    },
+    "miso_protected.zip": {
+      "sha256": "2d64573be6b2a17b233922678fcda16075b9cec5194dc4af75125c92c11d67de",
+      "bytes": 230752432
+    },
+    "miso_x-083_yp42.zip": {
+      "sha256": "74f499db57f18cf68766ad0a5cda5c2c4b3fb5acc1b041dfc27dda6325eacefc",
+      "bytes": 6326730
+    },
+    "miso_x-083_yp43.zip": {
+      "sha256": "d32470fe9086759847a227d5e308d79aa77e3771b7edfb3c8abeb857d0cfd0c7",
+      "bytes": 10797785
+    },
+    "miso_x-083_yp44.zip": {
+      "sha256": "62ea86d59b7f449dc7438e0470b6860739704fd6cbda8492c997caf214930cf2",
+      "bytes": 663198
+    },
+    "miso_x-084_yp41.zip": {
+      "sha256": "be820b382213482c3543aebc411e7cf0a25589756c30fb001a85ae09f447b6fa",
+      "bytes": 4611919
+    },
+    "miso_x-084_yp42.zip": {
+      "sha256": "60dd8b5d5c8ef96e37c41f74e3233fea3ddd11003fd364ca4a6d0cdf4d091cce",
+      "bytes": 25392515
+    },
+    "miso_x-084_yp43.zip": {
+      "sha256": "8bc3ad97067bad8b5fd228d6f7d057735d72c825cfcb01e7a7a04753727c4e4b",
+      "bytes": 20457688
+    },
+    "miso_x-084_yp44.zip": {
+      "sha256": "9ede78bfdb99b78c1a8c6cc51ec7deb0774e35b06e7cd0650c14dd28b993d2e7",
+      "bytes": 15150026
+    },
+    "miso_x-084_yp45.zip": {
+      "sha256": "e32302834112ba0e05bd74310637b499cb2b23a16a9f3077b885694472e2e9a9",
+      "bytes": 6987964
+    },
+    "miso_x-084_yp46.zip": {
+      "sha256": "782f46c714cc8ee40d5ce233eeb572cd0ab8df505ded92fc507d45e309d47820",
+      "bytes": 904468
+    },
+    "miso_x-085_yp38.zip": {
+      "sha256": "519713b079d51d55e36157a2ddac26055cecaea560108a99047b06301bd2c78c",
+      "bytes": 1540188
+    },
+    "miso_x-085_yp39.zip": {
+      "sha256": "f5bb0789d94962a7032a614e47a6f74eb0b086e5ba1e0659a915da89fa006914",
+      "bytes": 5415926
+    },
+    "miso_x-085_yp40.zip": {
+      "sha256": "c6a5a418e4849c3e5c0da7c55a03316a7a9c62a6a4773a9cb0b923e0e98c1ddb",
+      "bytes": 538891
+    },
+    "miso_x-085_yp41.zip": {
+      "sha256": "c5dd6a657c3f4d8b70f2b1901737d0b0838a42cf6b58e70b44e6691c670bd290",
+      "bytes": 8305302
+    },
+    "miso_x-085_yp42.zip": {
+      "sha256": "ab86835d51ea48b2a39b25f75ff802af61f13401f7f5cbb1b9acdf6b287d6b9b",
+      "bytes": 26328155
+    },
+    "miso_x-085_yp43.zip": {
+      "sha256": "5f66b71751103e8ede7c819e5910a29d92429a23462765b183b0c262c360998e",
+      "bytes": 25072189
+    },
+    "miso_x-085_yp44.zip": {
+      "sha256": "b863b3d82785a31d45f2c43bd585110dbac7729601e4cfeeda5c4677762560d8",
+      "bytes": 24982085
+    },
+    "miso_x-085_yp45.zip": {
+      "sha256": "78c7d066923c0757d9f3c359d2007a6ff83caad8def343919813e3a3dbe12b6b",
+      "bytes": 17677351
+    },
+    "miso_x-085_yp46.zip": {
+      "sha256": "151e60d42d8fc42c30c7f7af91fe703c5e03a28f131cd500c52414fed8858364",
+      "bytes": 9486322
+    },
+    "miso_x-086_yp37.zip": {
+      "sha256": "0e5178ddbe16eb81760b5b2ff3b60312ba375a2ef4bad5bc3327408eb1675dda",
+      "bytes": 394200
+    },
+    "miso_x-086_yp38.zip": {
+      "sha256": "dceea0592442b30a5683f118975eef1f737af48d6633e7cc8419d01269181bdb",
+      "bytes": 15468432
+    },
+    "miso_x-086_yp39.zip": {
+      "sha256": "34a26059820d3b574c257d0749af8aca56982d19c5a7a761b313457d467d66dd",
+      "bytes": 26776024
+    },
+    "miso_x-086_yp40.zip": {
+      "sha256": "ea46e19ed43ec2e3ab03a393668859f90e0153b3663d33521e011eff48b129d0",
+      "bytes": 6628199
+    },
+    "miso_x-086_yp41.zip": {
+      "sha256": "aaf8aaf9c288e751a2cb1364e3edfd5145b35f55b43bbf77bc58017853d03958",
+      "bytes": 14243701
+    },
+    "miso_x-086_yp42.zip": {
+      "sha256": "45459f147db7d53108a5edf0004a35d41dd7c7d73031cd510a1c6935c642a5fc",
+      "bytes": 22203681
+    },
+    "miso_x-086_yp43.zip": {
+      "sha256": "8a735ec30585ca635b9f86cc4f7ffa47cb780d8c2d4c24175fae325b75693a5f",
+      "bytes": 26584508
+    },
+    "miso_x-086_yp44.zip": {
+      "sha256": "60ebce62f7003d65c482df4557b0685fa8b8f4e82ef67432c126270c1913ef87",
+      "bytes": 24101712
+    },
+    "miso_x-086_yp45.zip": {
+      "sha256": "7cb1888e3eea84a039e77bed72b1108af31d04b7dd4ae61f753371da15ebfbcb",
+      "bytes": 4960712
+    },
+    "miso_x-086_yp46.zip": {
+      "sha256": "18e752d640ffe07310d0002a0fa12f102fa2f0eec0a2e9afd9ba23d85aec7606",
+      "bytes": 15685429
+    },
+    "miso_x-087_yp37.zip": {
+      "sha256": "fd084995e76e0e800e4e83be5b56a1fccbd4109286aa9b393d36fdf1e1eb7b9f",
+      "bytes": 12484884
+    },
+    "miso_x-087_yp38.zip": {
+      "sha256": "fbf4df247c8f4d3d0427f784b49086a895b83c354e59dba381c972cadb2c8290",
+      "bytes": 30068344
+    },
+    "miso_x-087_yp39.zip": {
+      "sha256": "4eec7db3c3e98ada902e4bdb43b2f0200f76bbd58cb2438ee21bad564d433bd7",
+      "bytes": 28425897
+    },
+    "miso_x-087_yp40.zip": {
+      "sha256": "74c9eecfc6a675817fc549b3c7acf4bf418cd5907765b00d3f610cf450437ca4",
+      "bytes": 25538041
+    },
+    "miso_x-087_yp41.zip": {
+      "sha256": "750e25a57a379aa67f86996f0efc5a4a9251abb9c545b975d975016f490996af",
+      "bytes": 12395052
+    },
+    "miso_x-087_yp42.zip": {
+      "sha256": "55c220f9d334d3932241ba2d321765baf78374c7d6bd57b0a861a49ed8af53cb",
+      "bytes": 3801747
+    },
+    "miso_x-087_yp43.zip": {
+      "sha256": "a056c702c79e6da39588208d9a25c8252d53cd8bfd11e9b2644ece1715d872b3",
+      "bytes": 11258434
+    },
+    "miso_x-087_yp44.zip": {
+      "sha256": "b1f6356c33a1951e263d61a2905575e85affa485e08053012453a327a0a4b5ab",
+      "bytes": 6647106
+    },
+    "miso_x-087_yp45.zip": {
+      "sha256": "2c7a3981ccee7917cd15195b567e902930835c883f8c5b065ba6827f7ad8b981",
+      "bytes": 4351635
+    },
+    "miso_x-087_yp46.zip": {
+      "sha256": "6db6c260eab134be55dbce5687ce0b22d32f811ec11cdffbbbaaac7ff8f8116a",
+      "bytes": 13346470
+    },
+    "miso_x-088_yp37.zip": {
+      "sha256": "f3f31d9fd52ea7821e126b9c503526e7e8234bac141c3f899f44bc87673d7cf4",
+      "bytes": 20155992
+    },
+    "miso_x-088_yp38.zip": {
+      "sha256": "472bd4ef03f4080835ed4740ed6bdbc7be533006d1f98464e8d5d0cbce94dd28",
+      "bytes": 28308214
+    },
+    "miso_x-088_yp39.zip": {
+      "sha256": "fa50c681904caa3401a5f3d74caa5d4418e88c1f6202c922fd9eb7d9311fc21a",
+      "bytes": 27305291
+    },
+    "miso_x-088_yp40.zip": {
+      "sha256": "b839c65576822ad7b1fbeb33f92931eae237d2100d2936e4205be5da129c7cf3",
+      "bytes": 25368116
+    },
+    "miso_x-088_yp41.zip": {
+      "sha256": "796cad552643e74e332f0734ce5865b57efd2897ac19dff6365e85811d718cc1",
+      "bytes": 9228109
+    },
+    "miso_x-088_yp42.zip": {
+      "sha256": "72a26ea3eb18068daad8615229644c0b09a47b0ce5b32a9d98a0e892d7d50b51",
+      "bytes": 2905396
+    },
+    "miso_x-088_yp43.zip": {
+      "sha256": "ea0ebf44ad864d505feb90746709bffe7b5525f0bb1bd72b206cf182ca40a60f",
+      "bytes": 5586042
+    },
+    "miso_x-088_yp44.zip": {
+      "sha256": "fe9f585df1667c0760d57fadc0094f950db871a77769dfaa4daa597f19d55123",
+      "bytes": 11207034
+    },
+    "miso_x-088_yp45.zip": {
+      "sha256": "8f4c73a547be28c086d8c5c07b218acc9baae84b79dea82434dab663fdfe73dd",
+      "bytes": 19179506
+    },
+    "miso_x-088_yp46.zip": {
+      "sha256": "12917ad54cc9aab29f017160c32fe574937da4966ea418a8d79a7d3c7406f9bf",
+      "bytes": 17009132
+    },
+    "miso_x-088_yp47.zip": {
+      "sha256": "48f700042cb1bc73a833b9182e6b35eb1be0298344218c5232f6b3d1574f0554",
+      "bytes": 981114
+    },
+    "miso_x-089_yp30.zip": {
+      "sha256": "afc54e650e706033fc17c2fae4b06b0668a939a7911b5626e448b828b52b32c1",
+      "bytes": 14317196
+    },
+    "miso_x-089_yp31.zip": {
+      "sha256": "fba505e855bb397c0672c7df40f853ab8ebb567291768afb3ec8bc829205731a",
+      "bytes": 17052775
+    },
+    "miso_x-089_yp32.zip": {
+      "sha256": "e6ee845f5be5d068da3f07baee79a9d063495725671dc16e0c01dfd3106f141c",
+      "bytes": 1063974
+    },
+    "miso_x-089_yp36.zip": {
+      "sha256": "e483a8b88df6bb070f41c9cd02ce441f550592ea0d3187a10c6ea757da8b951e",
+      "bytes": 2401951
+    },
+    "miso_x-089_yp37.zip": {
+      "sha256": "20b6b838e1e73bf78d5e1226800d55b301031066c2c8fd9460e423e62a405ed4",
+      "bytes": 28078471
+    },
+    "miso_x-089_yp38.zip": {
+      "sha256": "35089037a5885fa9f2ec8932e104c093c69c9ae2a13dd7eb09ea6d8e9d360c71",
+      "bytes": 26831801
+    },
+    "miso_x-089_yp39.zip": {
+      "sha256": "d039f592b8af85033b25944b436e2231cf285f68944b6cdc2f666be0a58037fb",
+      "bytes": 25901526
+    },
+    "miso_x-089_yp40.zip": {
+      "sha256": "b3e079410a108a5ff409af5b11e50ee2c35054b2d915eb927a161c5cb5afb210",
+      "bytes": 21509587
+    },
+    "miso_x-089_yp41.zip": {
+      "sha256": "acae403d23e3b69977e97e32db1d56078419d16f708888ca9acf19582d50742b",
+      "bytes": 3277621
+    },
+    "miso_x-089_yp42.zip": {
+      "sha256": "fbe98ccd18003a7765ff9ccbd829e1cfdb1de23c812824daa78e53aa0d098af4",
+      "bytes": 13406787
+    },
+    "miso_x-089_yp43.zip": {
+      "sha256": "8b6c484222ce8d122ef250d7b47fb6278adb73583d7ad1ac8ec22b585b140c6e",
+      "bytes": 24932855
+    },
+    "miso_x-089_yp44.zip": {
+      "sha256": "912b2ee2c1bdf6378dc5ff8f9090f95e0f9dac070b3938853b77cbd8efb5e046",
+      "bytes": 23968807
+    },
+    "miso_x-089_yp45.zip": {
+      "sha256": "c86d326c807f1f94051c3e6ba324fed856b9805e46d340a534664bfc27dcca6a",
+      "bytes": 25182059
+    },
+    "miso_x-089_yp46.zip": {
+      "sha256": "b2bc6890b53959805855fccec61683abc4775537369f3a0d851f0ff7f893aabe",
+      "bytes": 23600224
+    },
+    "miso_x-089_yp47.zip": {
+      "sha256": "aac6723df6013856acb9374b202b6597514c26df1ad877fa193c197e2ad7fb31",
+      "bytes": 5542513
+    },
+    "miso_x-090_yp29.zip": {
+      "sha256": "87bc6643325c71e1732e1049a9241fca09be558a6126dcbdc6570a48740d0085",
+      "bytes": 10634376
+    },
+    "miso_x-090_yp30.zip": {
+      "sha256": "e4b2fc462d44c37c9aebd9ff7b588af416cfbe530670a95d0e1481726b0f54d2",
+      "bytes": 28627011
+    },
+    "miso_x-090_yp31.zip": {
+      "sha256": "9c5b8fbd2d604c31f6acf2dd28fe432741317a127124fadffcf4e5eaec22569f",
+      "bytes": 34881324
+    },
+    "miso_x-090_yp32.zip": {
+      "sha256": "1014c16f4f71c1c62250de38c44404b1e162387d4fd15f4accb48366257c0463",
+      "bytes": 17790606
+    },
+    "miso_x-090_yp33.zip": {
+      "sha256": "e4378b53782a8e46b202261b4088ca77599b0964df401d1d9ae4d74b18f48fd7",
+      "bytes": 17225277
+    },
+    "miso_x-090_yp34.zip": {
+      "sha256": "4b34fb601e7012fadcfd27ed52597eefdf26bef0e09f8608fd3a7599476935f2",
+      "bytes": 4495170
+    },
+    "miso_x-090_yp35.zip": {
+      "sha256": "1879ff46436bdaf1f021d8043d73fc191f9eac29c0e4b386503c2505d9a6deb5",
+      "bytes": 2540508
+    },
+    "miso_x-090_yp36.zip": {
+      "sha256": "625a27e34c953de1d0997dc84b68e91c4679f9cf1ae22f13d823e52adb3190db",
+      "bytes": 14169874
+    },
+    "miso_x-090_yp37.zip": {
+      "sha256": "85ba515cd753bd4065eb0151d0a490c9e73576a668a6adafd1f738cebfeefc3b",
+      "bytes": 22024241
+    },
+    "miso_x-090_yp38.zip": {
+      "sha256": "acdd3128bc1d34297ae53bedc389444c7f670755e19eb08b675a3f05e075864e",
+      "bytes": 27458771
+    },
+    "miso_x-090_yp39.zip": {
+      "sha256": "28927c5947d0d1bcc242efa54d15871800ebd47994d2fc27261c0015772ce2f1",
+      "bytes": 26073572
+    },
+    "miso_x-090_yp40.zip": {
+      "sha256": "14390608c6b3723a8e92c6e085d9cd0b70b02d3d648e47e0071e365f8d526426",
+      "bytes": 25248435
+    },
+    "miso_x-090_yp41.zip": {
+      "sha256": "0dbc9f95479f0d662fa4333b2864a1cdccd12e9954b0fcdc0d15b0412aa24664",
+      "bytes": 12907115
+    },
+    "miso_x-090_yp42.zip": {
+      "sha256": "68952b984cb75edd53782b8ed3404cecd5e870b166101c7b00a569845c0fdf03",
+      "bytes": 14218993
+    },
+    "miso_x-090_yp43.zip": {
+      "sha256": "0ffbd5b7c79ba06e0217424faf57583c744e6e22ae0f76ed3c616eec06745427",
+      "bytes": 25649970
+    },
+    "miso_x-090_yp44.zip": {
+      "sha256": "29ef91fc74ad7ca0b680361c6a9bc2058a4d43b5c706a5d201b83b7e2705cc1d",
+      "bytes": 24743373
+    },
+    "miso_x-090_yp45.zip": {
+      "sha256": "1f14ba8b5f98bbcd4ba7056e4041e729b83e1092ec0c49e43fbe33f110424026",
+      "bytes": 24498110
+    },
+    "miso_x-090_yp46.zip": {
+      "sha256": "0658c13ec82a20d7990632f3a34a485153a7a14e4fa83a18ba3dd05ae17c7eaf",
+      "bytes": 20629413
+    },
+    "miso_x-090_yp47.zip": {
+      "sha256": "23da44749fb669e88e54b40aad80ff0cd610ee93a2b1442f13d107b80cab792a",
+      "bytes": 1334855
+    },
+    "miso_x-090_yp48.zip": {
+      "sha256": "cace20b3979dc63a07cad4073a764adf8b456eaa8a8f637fda4920c155e0dbe1",
+      "bytes": 478046
+    },
+    "miso_x-091_yp29.zip": {
+      "sha256": "1c859674165fd3e34a579b39e964975c861a8b71f9939dd6a292e64b4119f93e",
+      "bytes": 26582492
+    },
+    "miso_x-091_yp30.zip": {
+      "sha256": "af24a9f4f2eed622076025c06afb6bd256863dd40e62b4e54a07d7147eb63d45",
+      "bytes": 30745633
+    },
+    "miso_x-091_yp31.zip": {
+      "sha256": "041af2a6b9cc8cace3aceb7bccfe30aa3e36e042c052b2fc5a267aa022d6f224",
+      "bytes": 34753643
+    },
+    "miso_x-091_yp32.zip": {
+      "sha256": "c9ed356fe589bb631a2b209b862b0a5aa488f12442f9d5202f22755acca69a05",
+      "bytes": 32831989
+    },
+    "miso_x-091_yp33.zip": {
+      "sha256": "e46bc97b929e332d6a1f4127627fd10719af144e253c5e0d797ef54d9574bcbc",
+      "bytes": 28177162
+    },
+    "miso_x-091_yp34.zip": {
+      "sha256": "2016e0cadaec1316966110f80ec6f9d01bb4c75ee20c7f6b55d0529fc751ad4b",
+      "bytes": 24850998
+    },
+    "miso_x-091_yp35.zip": {
+      "sha256": "849aa5cb154dc295f8ffe4a965d8069c3faa5269a0fe911bf120008a8c999e27",
+      "bytes": 24850841
+    },
+    "miso_x-091_yp36.zip": {
+      "sha256": "7d5194224aa974b2fb7844447fff86ca31210f496a8c28ca4d595a8a7e6474c0",
+      "bytes": 14027500
+    },
+    "miso_x-091_yp37.zip": {
+      "sha256": "bcacfc17e994558ebac50456b6cd2f013e69c1ea4031442abc129a1791ca73aa",
+      "bytes": 12925872
+    },
+    "miso_x-091_yp38.zip": {
+      "sha256": "dfa16db890e381194b9645622622ee10811a8132e98f8aef2c4de28f25df729d",
+      "bytes": 29224437
+    },
+    "miso_x-091_yp39.zip": {
+      "sha256": "8b6bbad74fa5688f427c4bb76033413d093f649ae36fbf2f03cdc502a472fa4f",
+      "bytes": 28044492
+    },
+    "miso_x-091_yp40.zip": {
+      "sha256": "d5e36e25aa57e21eab77b433fc6a8567b56ba7a5b2eb29b551112e5e49047430",
+      "bytes": 27088055
+    },
+    "miso_x-091_yp41.zip": {
+      "sha256": "28b53e9fc3b89c1aca5135dfac34f81a98f8937221f067211ab5082fba52b216",
+      "bytes": 23977366
+    },
+    "miso_x-091_yp42.zip": {
+      "sha256": "a8f1f591f79140ec193524c85df13ad861255a38a42b2a37010a7da5a6b03ef3",
+      "bytes": 26164971
+    },
+    "miso_x-091_yp43.zip": {
+      "sha256": "2c7bfa4d9c3972be8aaa11b69aa2bd51fece5b0548375c48295123b56aad029a",
+      "bytes": 27306080
+    },
+    "miso_x-091_yp44.zip": {
+      "sha256": "4fb6644a6f0240b7cc238593565f07103e3d7fb5a881d401ecef59c7ba4c4a6e",
+      "bytes": 24723490
+    },
+    "miso_x-091_yp45.zip": {
+      "sha256": "6ec77fc57c6619a440815759f3d4aacb74727cd9bdac1f069ebb9e13377d8c90",
+      "bytes": 24625491
+    },
+    "miso_x-091_yp46.zip": {
+      "sha256": "6f3c0bc2820a66a84a2cee291aae7fe634dc815e5333ffca7d9307206b2a23cd",
+      "bytes": 16403964
+    },
+    "miso_x-091_yp47.zip": {
+      "sha256": "de28fc969f72c0bf9cd9b4fc3207a5ab1c5d5df274534a7e8b0e889ed4e0726d",
+      "bytes": 7653703
+    },
+    "miso_x-091_yp48.zip": {
+      "sha256": "9e3a144a053c8aea79f9a3d3bfe80cc765a09bbec1faed5cac22ae2ef468d7d5",
+      "bytes": 3170495
+    },
+    "miso_x-092_yp29.zip": {
+      "sha256": "fdcb04c3c9db520d32e4728e392b727e2158f8ac727e19fe5075ead6fbcdeb4e",
+      "bytes": 16928605
+    },
+    "miso_x-092_yp30.zip": {
+      "sha256": "6aab551dba2757f959111b25f4be9217d3b91e1fc85ba4db0f28cde2a8834384",
+      "bytes": 34095070
+    },
+    "miso_x-092_yp31.zip": {
+      "sha256": "5034681c81bef01aa857bd463fb74cb7f2015c2658c983b160a963c3e1f4301a",
+      "bytes": 33787623
+    },
+    "miso_x-092_yp32.zip": {
+      "sha256": "52e7640291aeadccb4d4bb38b6ba4421deec4edafdbd3b8bb6ad0d178e6a9bcc",
+      "bytes": 30770756
+    },
+    "miso_x-092_yp33.zip": {
+      "sha256": "5e4b5cc9866d0a2283612f31f42e90f269476f3a2e2c3130d2cca456e2f14801",
+      "bytes": 29453678
+    },
+    "miso_x-092_yp34.zip": {
+      "sha256": "0873dbdc536eb83679bdc3ee6e3b26d8eed46bf6e5c4ab2bf8ec0edb2b56e317",
+      "bytes": 27955178
+    },
+    "miso_x-092_yp35.zip": {
+      "sha256": "99392042c03eed5ed87a6b181f6ee30e54a58c0be8e62f514f01e87dd3af63dd",
+      "bytes": 29239548
+    },
+    "miso_x-092_yp36.zip": {
+      "sha256": "32e2b0759261009a1eaf3711fa5542658772f6920559c5b45e2900997d604294",
+      "bytes": 15533008
+    },
+    "miso_x-092_yp38.zip": {
+      "sha256": "7c362cd9f01ad4480a655dc8119f57ecceb213294583b8972911984459a2cc7f",
+      "bytes": 25841579
+    },
+    "miso_x-092_yp39.zip": {
+      "sha256": "bafc658d9aa07941a509a171637281c504bcef2fbcd72048939a291c9b81d5b3",
+      "bytes": 20930851
+    },
+    "miso_x-092_yp40.zip": {
+      "sha256": "65deb94157c58258a94f76b484d078ba59533c118ea41c3730e5f6807684e250",
+      "bytes": 27536626
+    },
+    "miso_x-092_yp41.zip": {
+      "sha256": "574a9810e50aac48d097cf5ea569007357257ce149a42138085c8d9ff5dbaba8",
+      "bytes": 26678656
+    },
+    "miso_x-092_yp42.zip": {
+      "sha256": "597973483d3ff4bd89faca2cc4a337ac493e1ff07930e8c9e77ae879d678b39b",
+      "bytes": 25729106
+    },
+    "miso_x-092_yp43.zip": {
+      "sha256": "5bfe139fed226069d1d8cc5866bfbc731d510c8293927e5cef6cf52ef230d45c",
+      "bytes": 26587551
+    },
+    "miso_x-092_yp44.zip": {
+      "sha256": "b715d241df106154afb9e3d7966bc6f25aed9007314945d904834a7bdcd03d46",
+      "bytes": 26336204
+    },
+    "miso_x-092_yp45.zip": {
+      "sha256": "4f36b8712dc5728d393539733d7e5828ddb8f8f4d6751dd904242d61079ad9b1",
+      "bytes": 24819993
+    },
+    "miso_x-092_yp46.zip": {
+      "sha256": "43d2e48486a0d944b15121ef2b0dec0e994d401f27b59fcc39e2bd2ef38f8d22",
+      "bytes": 19746349
+    },
+    "miso_x-092_yp47.zip": {
+      "sha256": "c61365eab62cbc03e0b8fff6d83b4d441a5c99a1c56ebb2bfebab8abfa4be986",
+      "bytes": 19866665
+    },
+    "miso_x-092_yp48.zip": {
+      "sha256": "843855be50a25224e0f707925567ef91aace5004595bba7e960c6ab4b5ef4c59",
+      "bytes": 3427110
+    },
+    "miso_x-093_yp29.zip": {
+      "sha256": "34cf84c843c201d3322c46ad17988c2c31270446012f0ead4e4dd5ec359914a1",
+      "bytes": 13588051
+    },
+    "miso_x-093_yp30.zip": {
+      "sha256": "26e74a60c6e984d5b87e492bcf5866a440b877aed6720f1126ea229eea44f4b5",
+      "bytes": 33245710
+    },
+    "miso_x-093_yp31.zip": {
+      "sha256": "941e07c25e0c442585650883653288994fff21643e2df2c91b2f005b28321dbb",
+      "bytes": 33587395
+    },
+    "miso_x-093_yp32.zip": {
+      "sha256": "cd14e5caddaab76a0b34b8113634affdbbed9e494612693a4c0dbd07083d978c",
+      "bytes": 33629844
+    },
+    "miso_x-093_yp33.zip": {
+      "sha256": "4c3a622c79a7c08c009b7094c152e83cad7fca5bf71c11e3a3d5861bccfac22b",
+      "bytes": 32319023
+    },
+    "miso_x-093_yp34.zip": {
+      "sha256": "d2da66a53f4d3af24f88a8e161e1060d740e7bd4e7d4ed98143d24b4f3509357",
+      "bytes": 31373128
+    },
+    "miso_x-093_yp35.zip": {
+      "sha256": "a3a9d0091abd07ac166396cdd5920acc09fc1825e8f52b96eb95c33cda1fce0b",
+      "bytes": 30711624
+    },
+    "miso_x-093_yp36.zip": {
+      "sha256": "48c318037402cb203474c880557499179a87625b2e3b7bb4d9fa39ff9ce0ca63",
+      "bytes": 15448380
+    },
+    "miso_x-093_yp37.zip": {
+      "sha256": "7e45d83276f91a4b2ca51c9801e67daade0076df9050d4d41235489e10278092",
+      "bytes": 2068089
+    },
+    "miso_x-093_yp38.zip": {
+      "sha256": "b662bc9de476e6968c06c1a98d434b06d985053054104c02ea34018b84bac02c",
+      "bytes": 27649475
+    },
+    "miso_x-093_yp39.zip": {
+      "sha256": "5c5c0e3d508126fc578102a33a74933a2b828ab4b20fd41da618a832843b00fb",
+      "bytes": 19724672
+    },
+    "miso_x-093_yp40.zip": {
+      "sha256": "2349413801e99c259124b1d5ad713e8cb4e1b7fdb8b5d6431c115516d4e8eeab",
+      "bytes": 27831456
+    },
+    "miso_x-093_yp41.zip": {
+      "sha256": "85493ded9a67c6a54871398bae571ac89146583c9e7baef6893f0782ac90ee72",
+      "bytes": 26733520
+    },
+    "miso_x-093_yp42.zip": {
+      "sha256": "e40585ccd7eb67cfc69ddd8b339a0c35181fc479c58e813d7fa2c90dd701cc3a",
+      "bytes": 24369346
+    },
+    "miso_x-093_yp43.zip": {
+      "sha256": "be7ab9c0c574855adea7a681f2f0dc3edc8dff634c20206ad741a96a87c15d2a",
+      "bytes": 24089409
+    },
+    "miso_x-093_yp44.zip": {
+      "sha256": "3794998f5256ae50cf0380236ed4db06d3a93a3a8bce2f2ffc20c65d6940dacb",
+      "bytes": 25332548
+    },
+    "miso_x-093_yp45.zip": {
+      "sha256": "e9d9d17aa2b6c41c078ada298d021dd52397889dc56d2306d54199e4274dbbb4",
+      "bytes": 24753703
+    },
+    "miso_x-093_yp46.zip": {
+      "sha256": "08c0064fe374c643c647b1696981dc6821b48ba9b8d7b34772c03180a9f7d52a",
+      "bytes": 23874430
+    },
+    "miso_x-093_yp47.zip": {
+      "sha256": "2f7debe4a57e6468f98ca7a4431fc704c905c6814ff3ed1f986243ac84d00648",
+      "bytes": 22499830
+    },
+    "miso_x-093_yp48.zip": {
+      "sha256": "c6fcd0e60df9b08e42368f3342fb8f777239d3959d348ea5b1af1ae68eab0d9a",
+      "bytes": 9881873
+    },
+    "miso_x-094_yp29.zip": {
+      "sha256": "229a677c8a69c8fc2cc33db4624ee5a45f280d1efb17627520c24fbb3d3d3b2f",
+      "bytes": 8401985
+    },
+    "miso_x-094_yp30.zip": {
+      "sha256": "73e1ea9111bd44c9cff2e35efd6a7509f900bf54b807a763b4367e59a400d22b",
+      "bytes": 34671434
+    },
+    "miso_x-094_yp31.zip": {
+      "sha256": "acb6d051014096664c8093785194606701184dfea48aec2e747931fec0502c71",
+      "bytes": 31779342
+    },
+    "miso_x-094_yp32.zip": {
+      "sha256": "c69ef6b2f715f27a4e753fb84f26e2bb87388a2f3903efdc0f0e6be3ccac253f",
+      "bytes": 31832650
+    },
+    "miso_x-094_yp33.zip": {
+      "sha256": "a379d3ce6b2524d952802243cd26395e87780789e6b5e6673957c01e3ceeae30",
+      "bytes": 25375593
+    },
+    "miso_x-094_yp34.zip": {
+      "sha256": "1ac4dc1945d8fabf2c61730324da4bdf0056219cb5159289899e67215480a3c5",
+      "bytes": 26928189
+    },
+    "miso_x-094_yp35.zip": {
+      "sha256": "03567d4de4271f7ee2f573b3f426d27a993402501c6fdbe988f9e6df99a64e6a",
+      "bytes": 12428299
+    },
+    "miso_x-094_yp36.zip": {
+      "sha256": "4d2ba6b1768a041d59165c1c11cfdb4b66b83995d74adc4733a6d7d820d9d650",
+      "bytes": 10347741
+    },
+    "miso_x-094_yp38.zip": {
+      "sha256": "1ee9689b2903eee17f989aa81b53bf5ce3713d42e0d3cecff7643e1893584f1c",
+      "bytes": 2251285
+    },
+    "miso_x-094_yp39.zip": {
+      "sha256": "72525179b0022ef53c16382ebd312083b657817e52a8c8f641fcdc045e13e031",
+      "bytes": 4838550
+    },
+    "miso_x-094_yp40.zip": {
+      "sha256": "78ae6ba1d4c849e489d496ee15664801ea5a6df533dfd8c80b650da159bfb30f",
+      "bytes": 15099054
+    },
+    "miso_x-094_yp41.zip": {
+      "sha256": "d67c1ce1ca829f509d7d1cdb55489b24e0cbb497f44ff5d701aa65509d5908a4",
+      "bytes": 26348695
+    },
+    "miso_x-094_yp42.zip": {
+      "sha256": "6915315ae5039cc195afb332f5f999b2c8870926ad76be7915f0ca920c28f297",
+      "bytes": 23934726
+    },
+    "miso_x-094_yp43.zip": {
+      "sha256": "10cc15942fee1368d12a8d60fc6fb70c13d105592717cc14fc03c9fecdfa9a9f",
+      "bytes": 23264588
+    },
+    "miso_x-094_yp44.zip": {
+      "sha256": "19aef3e95878c236ab24f15e15df945201cf3f294ee9798bb56fbf9dd060a232",
+      "bytes": 24440591
+    },
+    "miso_x-094_yp45.zip": {
+      "sha256": "500c2f2b73137e27d2f78e775918551eca2d725d9fb48ddaef2d0657de950233",
+      "bytes": 24280109
+    },
+    "miso_x-094_yp46.zip": {
+      "sha256": "bf4852e68c98928e93e98e055c8bf85e574f8683ad92b74671f836250b92ef59",
+      "bytes": 21457436
+    },
+    "miso_x-094_yp47.zip": {
+      "sha256": "e98f2fad253f392149125be9f6290479e10398cd3587373483cc3e61ac55bcaf",
+      "bytes": 22504859
+    },
+    "miso_x-094_yp48.zip": {
+      "sha256": "0f6bd73132053839a48911ed628cc05a1982f3dba85c5b4b3d577c2190f02dc3",
+      "bytes": 12021143
+    },
+    "miso_x-095_yp29.zip": {
+      "sha256": "81f82f1a751b70a0d1eb680fcc8df75ae6bf16e834ecd57057b6188172598920",
+      "bytes": 11008472
+    },
+    "miso_x-095_yp30.zip": {
+      "sha256": "c3a6d929e73142ef33ee9cb1896066f64cce4cec81394c967935505989e85b4f",
+      "bytes": 34050723
+    },
+    "miso_x-095_yp31.zip": {
+      "sha256": "2c782f89a62bfe7c6cca3b2366bb9daaf758c99d8569f8c9864b82d473109d6f",
+      "bytes": 26357677
+    },
+    "miso_x-095_yp32.zip": {
+      "sha256": "a89606263696b5839db2277cf931a6a935685d4d2d742782547406cedd11d4e9",
+      "bytes": 12973441
+    },
+    "miso_x-095_yp33.zip": {
+      "sha256": "9f21481b53745f3ec43d6de4a821e15b428b129a67b2e0cad216bcc653d2d5d2",
+      "bytes": 396113
+    },
+    "miso_x-095_yp39.zip": {
+      "sha256": "6c83db22c5e313496f191eeff460a7d9c8720c0cf5aba2d35c2af8b60ebdccc7",
+      "bytes": 7808122
+    },
+    "miso_x-095_yp40.zip": {
+      "sha256": "2321e6e0da73c7e2c8de17c99a405158d0b776ca5b65ec42e59797fcc4b96f88",
+      "bytes": 12894242
+    },
+    "miso_x-095_yp41.zip": {
+      "sha256": "761e23e0a965f3cc3244c319dba1e8b877fb14d9b2d4cb6305e7a5274ddbe250",
+      "bytes": 25901310
+    },
+    "miso_x-095_yp42.zip": {
+      "sha256": "d63fc76a9dc630da8e5245919fdc6bfceae7d9a9243cd8722d2f75a16697bc9b",
+      "bytes": 23352157
+    },
+    "miso_x-095_yp43.zip": {
+      "sha256": "f7abecd5482599b74cff5337cfce39589b67e94a49ee1b2406eb93fc0ea18cf9",
+      "bytes": 23099298
+    },
+    "miso_x-095_yp44.zip": {
+      "sha256": "687b2c6edd4fde234ac79a4ed9e0ab05712ed8eaff688b1a80fcff8be94881c4",
+      "bytes": 22786899
+    },
+    "miso_x-095_yp45.zip": {
+      "sha256": "9c04498e1971a45145524502e86acce7d42fcabdad4af44f123f55a74a923cb1",
+      "bytes": 23692934
+    },
+    "miso_x-095_yp46.zip": {
+      "sha256": "6b75cd3a2e0429b03be31bfe8bcd1db857e143d63e0ae416e016186c9879a160",
+      "bytes": 23133022
+    },
+    "miso_x-095_yp47.zip": {
+      "sha256": "b058bcbd91909f64109929008978b7841bbc0709a0bd4b1537babd2aabc5383f",
+      "bytes": 20717714
+    },
+    "miso_x-095_yp48.zip": {
+      "sha256": "5ebb8885fc047905566151b8673b036229a1a5e45839e5db11c57d5b8d9c169d",
+      "bytes": 13691641
+    },
+    "miso_x-095_yp49.zip": {
+      "sha256": "5e4e97f138fcabe5d354c67f8e943cbe194c0cc3c1228d7f494986b19bbc1cb5",
+      "bytes": 569074
+    },
+    "miso_x-096_yp29.zip": {
+      "sha256": "d4775e7d7a31b1ee4d6200d5d904a6b7384e88c1e18a3d6a68b38433b841ff95",
+      "bytes": 526764
+    },
+    "miso_x-096_yp30.zip": {
+      "sha256": "c5ca1ad160ab91293c80c9d57f72f29150c1022c76472760e453cf38f31c4260",
+      "bytes": 29654886
+    },
+    "miso_x-096_yp31.zip": {
+      "sha256": "a484168b79b51d2884579a202207862cccdea72d3785b626cc561075d2d49f6a",
+      "bytes": 3329738
+    },
+    "miso_x-096_yp40.zip": {
+      "sha256": "950eee9e382b10a3e060a84ae7e935e4a2b7d808cd789534b3763169fdcf13e6",
+      "bytes": 9161746
+    },
+    "miso_x-096_yp41.zip": {
+      "sha256": "2cc0db901d5578a9ec86bb8b9eb8ef7e1473b81a69c439eeeebd59167a4c3fb4",
+      "bytes": 24678293
+    },
+    "miso_x-096_yp42.zip": {
+      "sha256": "a8942ab42920fcfbf881f8d6c9b6ff53b47e153c92b981b7695ba6b4fe071c8e",
+      "bytes": 24706796
+    },
+    "miso_x-096_yp43.zip": {
+      "sha256": "3e99236b9a3262d4816332fb56d93626484bc6d2554de9d0f8e08471899455bf",
+      "bytes": 22876097
+    },
+    "miso_x-096_yp44.zip": {
+      "sha256": "dd8ff55e3a65119ab4e169d0947caad532138f9fd4a441ba606c52676741deee",
+      "bytes": 22835083
+    },
+    "miso_x-096_yp45.zip": {
+      "sha256": "b10bb2563f97e258469f62579072903c2a44d59b651eef273b5407426c917c4a",
+      "bytes": 22469331
+    },
+    "miso_x-096_yp46.zip": {
+      "sha256": "c5fb704c59b23124b94ab7e32818f311747608fa497dc615849a5d412e0d754c",
+      "bytes": 22571855
+    },
+    "miso_x-096_yp47.zip": {
+      "sha256": "d4ce412a7ef06961d02258031cd9c8c6d267cfee1fab38675d43d53347541bb4",
+      "bytes": 22410090
+    },
+    "miso_x-096_yp48.zip": {
+      "sha256": "d7488f0e17e3ded50005c77b2120a9df538c7659fdff2e9631ca8d05259e2f95",
+      "bytes": 18220079
+    },
+    "miso_x-096_yp49.zip": {
+      "sha256": "ba6ee2f6da134182d78d806d8e37a24951472850c0d53d30165915b28261c36a",
+      "bytes": 806192
+    },
+    "miso_x-097_yp30.zip": {
+      "sha256": "b35e31c74b08242952514fd706f086d20fcaa943d8d772b8241fc7a97f190003",
+      "bytes": 22470662
+    },
+    "miso_x-097_yp31.zip": {
+      "sha256": "9bda3d54104ea2a214bf06dc55e67336c6a31bd6b17e6c6178d99e3a167279a3",
+      "bytes": 5275665
+    },
+    "miso_x-097_yp41.zip": {
+      "sha256": "fb47f5c4da630307c2f35f19608c1378b0a3277e39861408e4e5f5a988ad36aa",
+      "bytes": 1507811
+    },
+    "miso_x-097_yp42.zip": {
+      "sha256": "fc5ad0bfe7ee9e4f37bb67551faa960fcc9c55529092776519ebb5216fd9ca50",
+      "bytes": 12565454
+    },
+    "miso_x-097_yp43.zip": {
+      "sha256": "c4a7c102cabe9a704396de5df4824383c0290664f99f1f4478a222718c7d1f62",
+      "bytes": 23696354
+    },
+    "miso_x-097_yp44.zip": {
+      "sha256": "a29177bff7080705f13262ff1b31258bbe83d12a3e1309f45f7b4319c85a4275",
+      "bytes": 22825096
+    },
+    "miso_x-097_yp45.zip": {
+      "sha256": "f43eeaec59b37f4e3a0adce1805a485848acf8f429d7c9662bd4879ae1711ca4",
+      "bytes": 21648313
+    },
+    "miso_x-097_yp46.zip": {
+      "sha256": "63f14c5419a62b7c2fb0977b34128bc0895f787005a97a103303340c13f1bfa3",
+      "bytes": 20787859
+    },
+    "miso_x-097_yp47.zip": {
+      "sha256": "170336cc4655f67be49581a0340f801c79e615a0cd75eb52bf14f6e7ae8a07bb",
+      "bytes": 19972963
+    },
+    "miso_x-097_yp48.zip": {
+      "sha256": "74a0bca77fdeb25408efa4d11904733c6c0c937473cd1e5a25c7c8c2d0eed4a0",
+      "bytes": 19475383
+    },
+    "miso_x-098_yp42.zip": {
+      "sha256": "74afe1b451bb0f690eba56b1b700273b46dccbc5f5ce463e96576d30b07717ca",
+      "bytes": 319253
+    },
+    "miso_x-098_yp43.zip": {
+      "sha256": "8d203256c75745a97f4f55da382dd1638df058c7e3c5d676122a11748277d193",
+      "bytes": 15379692
+    },
+    "miso_x-098_yp44.zip": {
+      "sha256": "6ec65294c5bb06a9bd18ef85596cae32cfd071bb5ef3da19360e8754f79efbfb",
+      "bytes": 12355518
+    },
+    "miso_x-098_yp45.zip": {
+      "sha256": "f45c2591e616f71e7b4077ea01d2766d45d1e2d6497211937f594e4e58a9a884",
+      "bytes": 15032156
+    },
+    "miso_x-098_yp46.zip": {
+      "sha256": "64c7b250c6ba956316e11d9adeeb2e84498a01589e8bf1cb098e45df7d11da36",
+      "bytes": 21512399
+    },
+    "miso_x-098_yp47.zip": {
+      "sha256": "8ca3153828d89e5ac45096c2bd0dadcb86cbaec12ef1a99aaba419813dcf8103",
+      "bytes": 20602292
+    },
+    "miso_x-098_yp48.zip": {
+      "sha256": "fbe54c19519bc5917c047f9948e353b54b3d2627b34003df19e0dbd3b9ec93b8",
+      "bytes": 20024955
+    },
+    "miso_x-099_yp43.zip": {
+      "sha256": "c302fe789867125ab249a1106a93181c5257568927e4360708b950ed9f7c9cbf",
+      "bytes": 1077825
+    },
+    "miso_x-099_yp44.zip": {
+      "sha256": "27b988b21cb306fd601d61d31dff96d29eaede833cf5214cb5b8c892e013c995",
+      "bytes": 911535
+    },
+    "miso_x-099_yp45.zip": {
+      "sha256": "bd0df17f0aa3551a6eed1cfdf16442cb032efafc48f2362f1215f2d0174b6cd0",
+      "bytes": 8901175
+    },
+    "miso_x-099_yp46.zip": {
+      "sha256": "57e43ae70a684c2220d0f2cba095e5aff440512c66a1d9b9adf7b8caaca4fe60",
+      "bytes": 22256523
+    },
+    "miso_x-099_yp47.zip": {
+      "sha256": "54efe8dd0abad898c2560a6c06663b702a8ff80f748fb2f9c791041b987d5d5a",
+      "bytes": 21729464
+    },
+    "miso_x-099_yp48.zip": {
+      "sha256": "9c0ec43116c605383dc81a39172b202bf7d9ec2cbf3b52b64fa3751417c9e3a3",
+      "bytes": 21036062
+    },
+    "miso_x-100_yp44.zip": {
+      "sha256": "b017de0846fee9e17aa3e2368a8d94ae6aa3336b4153c63686d5377f8aa2cf4c",
+      "bytes": 1753432
+    },
+    "miso_x-100_yp45.zip": {
+      "sha256": "64b510a59110f5cdea7168260a82b24f62cb122f003f143c440f9f362d848869",
+      "bytes": 19914589
+    },
+    "miso_x-100_yp46.zip": {
+      "sha256": "535a73e30314ae0d3a71aca164e6001b3decc0bc85be0bc136d5f9513ec2f98e",
+      "bytes": 21658841
+    },
+    "miso_x-100_yp47.zip": {
+      "sha256": "3b150601e732bf5d11da27fbf97505aff26c220626e960cd4ef5e96ba7c43e29",
+      "bytes": 21497652
+    },
+    "miso_x-100_yp48.zip": {
+      "sha256": "00e98fb6e06016640e98f609d5f3ce308e78209d66ed02ef3da9353a29a50020",
+      "bytes": 20889894
+    },
+    "miso_x-101_yp44.zip": {
+      "sha256": "37397394bb2d2d4ea0f4fd8bc09185d27245720cd4e3daa0776c70c769894513",
+      "bytes": 572294
+    },
+    "miso_x-101_yp45.zip": {
+      "sha256": "ba911a45cdc226e2cb0f18961eea8a2ae0bb3ef6ad6a274b174f4150eede4781",
+      "bytes": 10798737
+    },
+    "miso_x-101_yp46.zip": {
+      "sha256": "2f2eec4832319a1f4d5c3c964010b400d68993feef5be3c9f19930909997809f",
+      "bytes": 22143837
+    },
+    "miso_x-101_yp47.zip": {
+      "sha256": "ad1746077767af5986e895d2687b65a798bf6534955b5c7a993d46fbc5def50a",
+      "bytes": 22111144
+    },
+    "miso_x-101_yp48.zip": {
+      "sha256": "4ff4b862a432c1103d60346cddd9c6d287285a4708ba249224525402f33d0a1a",
+      "bytes": 21314905
+    },
+    "miso_x-102_yp45.zip": {
+      "sha256": "c2f7130ca9ae5cbee8542ab242424543b78a820b651cc0757287a71e7170ae9f",
+      "bytes": 2355697
+    },
+    "miso_x-102_yp46.zip": {
+      "sha256": "9d9e2265b6c1b632c2d96ee902f13a810ee67c6763c7d9292a0bf1bae604fcf0",
+      "bytes": 22758682
+    },
+    "miso_x-102_yp47.zip": {
+      "sha256": "76796919887fa506f68d3b8abcb563c3a7c9979a1fc7fde482171894e52ab8fb",
+      "bytes": 21232674
+    },
+    "miso_x-102_yp48.zip": {
+      "sha256": "5918f27627ecc9e48f155377b2b1e94b25ea8c233f90b108198b26b0de18be5e",
+      "bytes": 21071199
+    },
+    "miso_x-103_yp45.zip": {
+      "sha256": "ec54c43efa48d0e9a0f830cc54349079c25e07277bd880b8fbd96ac56dda64d5",
+      "bytes": 1866873
+    },
+    "miso_x-103_yp46.zip": {
+      "sha256": "c115182d383bd6caaf4f8ee178fe60476e87f86d028a456e5ae25b16174e1a7e",
+      "bytes": 22550436
+    },
+    "miso_x-103_yp47.zip": {
+      "sha256": "02590462c88057053a06068821440f1886de4e427884bd71945b5e471b98a3c7",
+      "bytes": 21999936
+    },
+    "miso_x-103_yp48.zip": {
+      "sha256": "356129af338341e8d5c214eaa961112906f38b0bb3cac9fcb79f98ee3303b403",
+      "bytes": 21288564
+    },
+    "miso_x-104_yp45.zip": {
+      "sha256": "a2bc15241ee0ef642e7dc29f88025f463c28f01b86a47b10faff361f9449151c",
+      "bytes": 2087056
+    },
+    "miso_x-104_yp46.zip": {
+      "sha256": "e0a34ff06bb4b66c3b1b6c43484a39610adfd47a3d5101d11f6c96a50d81ef33",
+      "bytes": 23406505
+    },
+    "miso_x-104_yp47.zip": {
+      "sha256": "45345f1f5081c7572515e09192b6224d9f64c7d20ab6bab1f948df2addf8aae9",
+      "bytes": 24093946
+    },
+    "miso_x-104_yp48.zip": {
+      "sha256": "8d8e4ac64a8539d1807d45225ce3a3b2d8173b8a4c5f27e0b6b4470d9cc56c1a",
+      "bytes": 21326242
+    },
+    "miso_x-105_yp45.zip": {
+      "sha256": "9d3d11ed2c3eb774678405de5fbcd08a19aba2c2adb74109c601dd6eea212ad1",
+      "bytes": 1130395
+    },
+    "miso_x-105_yp46.zip": {
+      "sha256": "aa7d4381375eb74925eb76f9cfc97ed762fed0116e0dbfe2a5cdece33b06a112",
+      "bytes": 22090448
+    },
+    "miso_x-105_yp47.zip": {
+      "sha256": "2f4ee371e634483900824f739fff4d7d22295f117fd002c289b9470bee2d878b",
+      "bytes": 23097503
+    },
+    "miso_x-105_yp48.zip": {
+      "sha256": "52ca1fa14eeb6ad4cd04886b61b50ba7add7234abc263e73aaf5c451bc342b6d",
+      "bytes": 21527514
+    },
+    "miso_x-106_yp46.zip": {
+      "sha256": "c199b3e305b96e0c90b97410cf0d844d96e6d55030cd09c783fccbdd3d6b1b40",
+      "bytes": 14219218
+    },
+    "miso_x-106_yp47.zip": {
+      "sha256": "9a43898f0bdb5d2ca67fefd5956beca4774fcac1696d45715acb2e850dc7eb05",
+      "bytes": 20452049
+    },
+    "miso_x-106_yp48.zip": {
+      "sha256": "c119b3bb238c44b141022994ac932e13475120ee1357ad88c909e8dd2bd2fd90",
+      "bytes": 20357425
+    },
+    "miso_x-107_yp45.zip": {
+      "sha256": "9423fffd58c66bf966f4235443a0cf2ff573a959c7981a5064939e699e0d2abe",
+      "bytes": 369733
+    },
+    "miso_x-107_yp46.zip": {
+      "sha256": "3ae00fb96601fc11baca7c7812883eeb5441fda300b9c9f009115c1d9c1b4f9d",
+      "bytes": 17264579
+    },
+    "miso_x-107_yp47.zip": {
+      "sha256": "17b051ddaa0b78a45678fc55ea492bfa383cbfa07dd95d4cd5bbd553fcc27a74",
+      "bytes": 3542373
+    },
+    "miso_x-107_yp48.zip": {
+      "sha256": "e7be856b32374bf48ab45dd8942b6027afef22a9b0df0739c20cf60c309ee20b",
+      "bytes": 2408156
+    },
+    "miso_x-108_yp46.zip": {
+      "sha256": "4caba945ee260363ab401150332ba98269eee6ef0db2722d7e30e4029b52cfd3",
+      "bytes": 5457454
+    },
+    "nyiso_protected.zip": {
+      "sha256": "924d07fb4f8d85c4871e4052ba242f7ed7809e66b2d286a23d027d81f7d93a2a",
+      "bytes": 63504562
+    },
+    "nyiso_x-072_00_yp40_50.zip": {
+      "sha256": "a3d26d6938682a120398ad33c2a7f75a0a05e04d1ccfe8c47af57306697a48bb",
+      "bytes": 133175
+    },
+    "nyiso_x-072_00_yp41_00.zip": {
+      "sha256": "3fb7179776c34210393766fdf1f5f41551ec564cdf2492dfd935c41768bc3473",
+      "bytes": 369128
+    },
+    "nyiso_x-072_50_yp40_50.zip": {
+      "sha256": "756a23dfdd7dc80d6aec934da4ea07d5b7e3a7a80cfbbb99d56f80e89583e57d",
+      "bytes": 1310480
+    },
+    "nyiso_x-072_50_yp41_00.zip": {
+      "sha256": "ce5b3094d58038c8a7deaaf31f07c6ed183e226e01b75dbfdc36b47e1fd93100",
+      "bytes": 1199981
+    },
+    "nyiso_x-073_00_yp40_50.zip": {
+      "sha256": "cdc903105ddcf636f84ba0b18d00c61397c9d9cb10dec99dab23f249804e405b",
+      "bytes": 3339627
+    },
+    "nyiso_x-073_00_yp41_00.zip": {
+      "sha256": "59609b1a70d4e85a87235b3313f3de52a80c347ac1a7c242b1e845bf090a2be7",
+      "bytes": 200923
+    },
+    "nyiso_x-073_50_yp40_50.zip": {
+      "sha256": "b85b22dffb064239a165baef79bb09d31712ffa28fc76b24900fe9ec179edd57",
+      "bytes": 4411344
+    },
+    "nyiso_x-073_50_yp41_00.zip": {
+      "sha256": "dca23ec5c9c5510340d98ea8effd863886a6c053232828ff33306a45d8c7e2cc",
+      "bytes": 127954
+    },
+    "nyiso_x-073_50_yp41_50.zip": {
+      "sha256": "a51d29234dc13606ae83ca30d51ecd6d6909997e24573f845a7d2e21339068b7",
+      "bytes": 138709
+    },
+    "nyiso_x-073_50_yp42_00.zip": {
+      "sha256": "7152308ed0732348fd4ced0847dae9fc036e9295868c6235dad6a4085b2a4fa2",
+      "bytes": 993058
+    },
+    "nyiso_x-073_50_yp42_50.zip": {
+      "sha256": "ada13d62eda4e32b7b8ea05d23620135e827b3721e8fc48f945b62529fb0fcc0",
+      "bytes": 3102565
+    },
+    "nyiso_x-073_50_yp43_00.zip": {
+      "sha256": "622047051485ea793345047705388b6684fc35c35345ed85af324c29e9dcbd7f",
+      "bytes": 3780113
+    },
+    "nyiso_x-073_50_yp43_50.zip": {
+      "sha256": "a81f0a9a38c0047fc01b909e4be4ce0049622d64e20af7596f903255c2844455",
+      "bytes": 2069406
+    },
+    "nyiso_x-073_50_yp44_00.zip": {
+      "sha256": "5626b0b06db4541de36f8866b5f8188063fbadc7ed6b81558ed4722a09aebee5",
+      "bytes": 1795410
+    },
+    "nyiso_x-073_50_yp44_50.zip": {
+      "sha256": "73d77e9563697c29a5e6152609d632322a448c0eaa388264fd4ca1bfc98b4d60",
+      "bytes": 1699847
+    },
+    "nyiso_x-073_50_yp45_00.zip": {
+      "sha256": "7de51f74cc916e16f584b93c604d64d2116cffc8694ebdad9cc5a7df5e671f7c",
+      "bytes": 162203
+    },
+    "nyiso_x-074_00_yp40_50.zip": {
+      "sha256": "aaa2ca8f8e4da16041261f6891199d24e84226cdfae34f8666c51c8b2e6ac201",
+      "bytes": 5398181
+    },
+    "nyiso_x-074_00_yp41_00.zip": {
+      "sha256": "4ae2c7889c7ff6592c9d542386eadbb2c2c0462268f309d4a0e8277ba32487b2",
+      "bytes": 6304106
+    },
+    "nyiso_x-074_00_yp41_50.zip": {
+      "sha256": "e5568e3a11c2d2a4fe9b76ac71b9bb3e45e5e4037611581327238c053379789f",
+      "bytes": 7588522
+    },
+    "nyiso_x-074_00_yp42_00.zip": {
+      "sha256": "effa58213041fe44795f910baf98cbef024f935462520a38dd8a002e3c65ff31",
+      "bytes": 7868529
+    },
+    "nyiso_x-074_00_yp42_50.zip": {
+      "sha256": "135832648f6e078d33fc4b8e9ad9dba5d7b5c9477b9920271c512ffd8e065f31",
+      "bytes": 7711079
+    },
+    "nyiso_x-074_00_yp43_00.zip": {
+      "sha256": "8bf1d50b2bd0b26f8ea3b6bd7ae176df6ec9a856c2f098eeaae37c17279bbd29",
+      "bytes": 7345952
+    },
+    "nyiso_x-074_00_yp43_50.zip": {
+      "sha256": "e02ba6106008033e2b49382d1a4cd673f6f207f24ee8d29d8c3124c8f171d68c",
+      "bytes": 6934599
+    },
+    "nyiso_x-074_00_yp44_00.zip": {
+      "sha256": "173c86ef03c08018d289fbc7c35677ddb9ac119641eaf69422bd9e41863e10a3",
+      "bytes": 6909413
+    },
+    "nyiso_x-074_00_yp44_50.zip": {
+      "sha256": "6e831a83cb94bea45bbb3fdf12c433c36af1a03314b63f5378191d46744486be",
+      "bytes": 6738823
+    },
+    "nyiso_x-074_00_yp45_00.zip": {
+      "sha256": "4841a887500bb436f5ef2390059fd80056ec4cde5b4680859074dfae949f57ed",
+      "bytes": 163970
+    },
+    "nyiso_x-074_50_yp40_50.zip": {
+      "sha256": "5a204cf65efc51ba8287aacec0eb52a017095d936ad832faaa4272fdabf062e7",
+      "bytes": 888695
+    },
+    "nyiso_x-074_50_yp41_00.zip": {
+      "sha256": "166644d6cfad39976571180dc5cc117a42013be7ca49642626016abc2e58023f",
+      "bytes": 5347689
+    },
+    "nyiso_x-074_50_yp41_50.zip": {
+      "sha256": "d718b5573c487afe2f18dabc688eaf9183837b84c1de1ae0c02bea8a183f84c9",
+      "bytes": 7459933
+    },
+    "nyiso_x-074_50_yp42_00.zip": {
+      "sha256": "69ab2121edbd22c31f0a79df46d32ac032ce0f7c79082ffff8d262c5f2a7cff8",
+      "bytes": 7044979
+    },
+    "nyiso_x-074_50_yp42_50.zip": {
+      "sha256": "9fd8b08583ee46d381b060d157a562a2f339906eb13b8268cc2773705c7f4553",
+      "bytes": 7112012
+    },
+    "nyiso_x-074_50_yp43_00.zip": {
+      "sha256": "ce4702dc32acf38241dca8b258c23939d7166fd999914730027c515f578aee07",
+      "bytes": 6660968
+    },
+    "nyiso_x-074_50_yp43_50.zip": {
+      "sha256": "53f39130cd149fc8dccc9af0a43f3eeff073bf94a6ef8ab5344d570a55010147",
+      "bytes": 6667040
+    },
+    "nyiso_x-074_50_yp44_00.zip": {
+      "sha256": "82310b1dcfd61a0a40927ee0a329d410e530ac1f6332474d9383e6819f6fca00",
+      "bytes": 6514401
+    },
+    "nyiso_x-074_50_yp44_50.zip": {
+      "sha256": "696754211f7e4b07a4183bcb80dcebb6a23df387390f950f190f25ade3206928",
+      "bytes": 6600564
+    },
+    "nyiso_x-075_00_yp41_00.zip": {
+      "sha256": "e55fe089da5930af3cb54efd1f93f7d71bce1e2a1b6854b2e740bb11293e0166",
+      "bytes": 1669687
+    },
+    "nyiso_x-075_00_yp41_50.zip": {
+      "sha256": "7350c0ace4b429429b33c68adb5c55026ff13db5f6f36ee957ea35c93d0a7804",
+      "bytes": 7006075
+    },
+    "nyiso_x-075_00_yp42_00.zip": {
+      "sha256": "466afd82277b4055a3c6d3ad78eac4ca5b5b8988502514ef80be048cea3dd574",
+      "bytes": 6776324
+    },
+    "nyiso_x-075_00_yp42_50.zip": {
+      "sha256": "91e4076c1b35cbbbb17a99c1bf61405252edb6a890267c27c196b1d7395c0e61",
+      "bytes": 7042820
+    },
+    "nyiso_x-075_00_yp43_00.zip": {
+      "sha256": "659f2f4a7a59f52a3c511b43ba28b9a93a3042375faf23fd826b93bf3c7ecbca",
+      "bytes": 6760604
+    },
+    "nyiso_x-075_00_yp43_50.zip": {
+      "sha256": "5465939265ee15fa77759fc935d1f011f1c5f5008e0fe0b635adf9762edfc5c1",
+      "bytes": 6448682
+    },
+    "nyiso_x-075_00_yp44_00.zip": {
+      "sha256": "0374dd1803d8952357cd025be93c8230973a8de1f2b74bb00d0432fea3d1b329",
+      "bytes": 6582593
+    },
+    "nyiso_x-075_00_yp44_50.zip": {
+      "sha256": "27e0e991f4c8a34efd8f403b8134a10e00b03e9cdf40228119ed1d4e73bbf7ec",
+      "bytes": 6839019
+    },
+    "nyiso_x-075_00_yp45_00.zip": {
+      "sha256": "3210672b098baed1b3e1346628779d370ec1e1cd6b151f2a4620715326e5d630",
+      "bytes": 134364
+    },
+    "nyiso_x-075_50_yp41_50.zip": {
+      "sha256": "6cc5610fb6a71359eae2aa369deb265c7840ba6cf5b0d6dc4af64aaf93b72467",
+      "bytes": 1870848
+    },
+    "nyiso_x-075_50_yp42_00.zip": {
+      "sha256": "220de20ee9858cc6a57a7da78adf89ec1b65e04afda126e98adeb85aa99c85f2",
+      "bytes": 6970401
+    },
+    "nyiso_x-075_50_yp42_50.zip": {
+      "sha256": "131a2e6be63aaab516b2095719a6f32829647795569d335fae844fd489f3e46c",
+      "bytes": 7099813
+    },
+    "nyiso_x-075_50_yp43_00.zip": {
+      "sha256": "46576bb4b68ebfe5d874c7c84255734120ff7b4d5c5ba557fdac929c59b7bd0c",
+      "bytes": 6929672
+    },
+    "nyiso_x-075_50_yp43_50.zip": {
+      "sha256": "3a529325f35b77f9ab8f8f21c9d4e52e50bed49f07e344bfad47e4bda1e10d7f",
+      "bytes": 6799955
+    },
+    "nyiso_x-075_50_yp44_00.zip": {
+      "sha256": "aeb7d601128d78a8f5eac79d28c3f30fc142de38c02c3a0e133848bc81a2ead3",
+      "bytes": 7141096
+    },
+    "nyiso_x-075_50_yp44_50.zip": {
+      "sha256": "1b633cbb8b5844a45247917d85a2c9f4e970c245fd7e5320ad0e84b6e68951da",
+      "bytes": 4877406
+    },
+    "nyiso_x-076_00_yp41_50.zip": {
+      "sha256": "f27c79ad34d33f2e439bfcfc7a114036f8998ffe40f178170937c5d390d4ef29",
+      "bytes": 144655
+    },
+    "nyiso_x-076_00_yp42_00.zip": {
+      "sha256": "aa6b0fde938e59210f376e10579365e6dfdaa8f8946d1e1edba2ea0d3f1e4fcf",
+      "bytes": 7045587
+    },
+    "nyiso_x-076_00_yp42_50.zip": {
+      "sha256": "522c823d2944f2b5996dea9fe5d36d8fddbe35d64b3c39cf97e4e39e2ce05cbe",
+      "bytes": 7008679
+    },
+    "nyiso_x-076_00_yp43_00.zip": {
+      "sha256": "0bdd9cdbb04dbcb7bd7d33254177d85b44f90e179e1e7588d10e0ec83b5818ac",
+      "bytes": 6645165
+    },
+    "nyiso_x-076_00_yp43_50.zip": {
+      "sha256": "257be663d3c8b76dd1fcf5daa3ae70dfa119161497c30d1bb6767ee59bb5344b",
+      "bytes": 6736229
+    },
+    "nyiso_x-076_00_yp44_00.zip": {
+      "sha256": "5a0f7c2c33d4f507131e216fc3e6d648018c3e21af2d5c2c01ef2be3b07139a4",
+      "bytes": 6325422
+    },
+    "nyiso_x-076_00_yp44_50.zip": {
+      "sha256": "fd4246dd28a2dfb84dd74d449862d9c375274e7c0b8dfac2dcb995ff6e45fcf1",
+      "bytes": 892477
+    },
+    "nyiso_x-076_50_yp41_50.zip": {
+      "sha256": "366c70fdc11d3f80fd0af1da04c76dbb2cfc1a56427b257dc076c84ffdc56991",
+      "bytes": 146454
+    },
+    "nyiso_x-076_50_yp42_00.zip": {
+      "sha256": "8f46445aaefc100c12484241ef8106ac07a2f8c6704681f33453afcc6a8b5df0",
+      "bytes": 7034880
+    },
+    "nyiso_x-076_50_yp42_50.zip": {
+      "sha256": "204de1de6f4d6c32a77857e4360fec41f2a2d20c13916b74f7adf2d5814fa373",
+      "bytes": 6803510
+    },
+    "nyiso_x-076_50_yp43_00.zip": {
+      "sha256": "d895a470c76514d6027a0518e29febc6c6aae0376b9de1e1e09efb3e06c70855",
+      "bytes": 7041237
+    },
+    "nyiso_x-076_50_yp43_50.zip": {
+      "sha256": "ac86b0333b8acb027ca165973a6367a733592d762b80deacf2a90e8f1de13bd9",
+      "bytes": 3203884
+    },
+    "nyiso_x-076_50_yp44_00.zip": {
+      "sha256": "cda5d541652fbc3815de5945013f6d2fd7a5bd3720dd3c0207b90e21290f623a",
+      "bytes": 2123449
+    },
+    "nyiso_x-077_00_yp41_50.zip": {
+      "sha256": "faba3f14012dbb2985ddaef010802c51119eb7441b07ba11006b1ec7cd2b393e",
+      "bytes": 116057
+    },
+    "nyiso_x-077_00_yp42_00.zip": {
+      "sha256": "3225a4026261ace7878e0778b416fe7f38836748a2355d959c319cee793baae4",
+      "bytes": 6950147
+    },
+    "nyiso_x-077_00_yp42_50.zip": {
+      "sha256": "aa21f8ba0adddc2556b5bb53de4fb2fc057933b5b12b53e2ad6d93fbb5458e69",
+      "bytes": 6076905
+    },
+    "nyiso_x-077_00_yp43_00.zip": {
+      "sha256": "2a75e70693bd6f0e27f23994c868bb9047541f9bad06c8d4703f34a537e045e0",
+      "bytes": 5222368
+    },
+    "nyiso_x-077_50_yp41_50.zip": {
+      "sha256": "112c5adc0576432393e1f807c711fbde59b70506fc1dbb03b477e6119dda1b0c",
+      "bytes": 120228
+    },
+    "nyiso_x-077_50_yp42_00.zip": {
+      "sha256": "fe1d79bd7f831f3adc50ebf4a03373f9e56b5f10d18a3228e930a197c95e4f67",
+      "bytes": 6998876
+    },
+    "nyiso_x-077_50_yp42_50.zip": {
+      "sha256": "b76ad87f9d33e13b9d9779cec4cdaf6172dfaddab6fc01b9ec406f54548d911d",
+      "bytes": 6712795
+    },
+    "nyiso_x-077_50_yp43_00.zip": {
+      "sha256": "0e66b5fa4fd9e88acad2b66ca6fe5f7b899b59cac7809e4a7e4ecb639d72b4b1",
+      "bytes": 4071537
+    },
+    "nyiso_x-078_00_yp41_50.zip": {
+      "sha256": "dd74ae0752d63d70da8527b9c8e9d2ea1868e3695354abfbb62efa7f2b5b3820",
+      "bytes": 143570
+    },
+    "nyiso_x-078_00_yp42_00.zip": {
+      "sha256": "04d262738e7b6bcd540cf8c03eb0b65235205bcdb1afb982911875163bd39688",
+      "bytes": 6838807
+    },
+    "nyiso_x-078_00_yp42_50.zip": {
+      "sha256": "e23357b4006fb1ac2fcd97a4117299c62a1b08c56b7a56d01cceaf10a3ded6a2",
+      "bytes": 6788435
+    },
+    "nyiso_x-078_00_yp43_00.zip": {
+      "sha256": "b9567704fe053ba0d5cfa358f71824f1699009757e4d7885dab621e97beb7dfa",
+      "bytes": 4355720
+    },
+    "nyiso_x-078_50_yp41_50.zip": {
+      "sha256": "59e3befdd1f98888334873ea3b4bd75b7d71051c891e8b7126d96e988cf1b970",
+      "bytes": 139181
+    },
+    "nyiso_x-078_50_yp42_00.zip": {
+      "sha256": "163a936a50a5fb803660a8c2a6880ba1a1178054414a62aeb419b50968a1ba37",
+      "bytes": 6801321
+    },
+    "nyiso_x-078_50_yp42_50.zip": {
+      "sha256": "663d39c30660af6a53063756d758648b09a4286bde97c0c3b6ec2343b35ed6ee",
+      "bytes": 6811228
+    },
+    "nyiso_x-078_50_yp43_00.zip": {
+      "sha256": "6a21fe30fa0369d21d436050c174ee496e6fdbfa097c46e4566964be4ec885c3",
+      "bytes": 4968990
+    },
+    "nyiso_x-079_00_yp41_50.zip": {
+      "sha256": "3746897f64dd96009278fe62f3610abdb93ffd76c569b014b9792e1f5b70e9c8",
+      "bytes": 134216
+    },
+    "nyiso_x-079_00_yp42_00.zip": {
+      "sha256": "2165a7dbf1d05475c60f9633117821694b54619cd5d00006dd55752237e5e227",
+      "bytes": 6826059
+    },
+    "nyiso_x-079_00_yp42_50.zip": {
+      "sha256": "3eef4e9951c345df8519f7a942535f3ecc147d72eb455ed38c2ad0ac3e4363e3",
+      "bytes": 6143970
+    },
+    "nyiso_x-079_00_yp43_00.zip": {
+      "sha256": "e82e2df88279cefc2b0e94c4809f36ca73022dbc591b36dc6de4b508162b12db",
+      "bytes": 4381578
+    },
+    "nyiso_x-079_50_yp41_50.zip": {
+      "sha256": "2f63d6a1511ee449b5feaa5daf28e3f13211ffb4d737aeb32abf3651b9d2f20c",
+      "bytes": 146985
+    },
+    "nyiso_x-079_50_yp42_00.zip": {
+      "sha256": "95935cb11567d591529ce6825ffac1a50227baacc0a8874822714f5fb1e1f92d",
+      "bytes": 6411996
+    },
+    "nyiso_x-079_50_yp42_50.zip": {
+      "sha256": "fbb2773afdb1566bfcfe61845c1c1b906ed628b92bbd4f85c7e2d22ccc456ed4",
+      "bytes": 870784
+    },
+    "nyiso_x-079_50_yp43_00.zip": {
+      "sha256": "065b731b202bbd4f8b8cdf904c2969b94146c67a1a2c5fad6e71a9eea78a6a08",
+      "bytes": 458475
+    },
+    "nyiso_x-080_00_yp41_50.zip": {
+      "sha256": "a4fdf4ab8650c577d1d809becdec4c94ffb81584d6b5142988e5e67f7d7e9f20",
+      "bytes": 131414
+    },
+    "nyiso_x-080_00_yp42_00.zip": {
+      "sha256": "87cf144519f964135964054f9b99b4d067b1271c3a8373ba074ff8dbf6013f6a",
+      "bytes": 2472520
+    }
+  }
+}
