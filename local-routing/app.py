@@ -63,6 +63,23 @@ def load_pois():
         return [dict(row,latitude=float(row['latitude']),longitude=float(row['longitude'])) for row in csv.DictReader(f)]
 POIS=load_pois()
 
+def poi_record(p):
+    return {'name':p['queue_poi_name_exact'] or p['map_poi_name'] or p['bus_name'] or 'Unnamed POI', 'queue_poi_name':p['queue_poi_name_exact'], 'map_poi_name':p['map_poi_name'], 'bus_number':p['bus_number'], 'voltage_kv':p['voltage_kv'], 'latitude':p['latitude'], 'longitude':p['longitude'], 'coordinate_status':p['coordinate_status'], 'source':p['source']}
+
+@app.get('/pois')
+def all_pois():
+    return {'pois':[poi_record(p) for p in POIS], 'note':'Queue names are shown when present; otherwise the mapped bus name is used. Coordinates and names do not establish electrical compatibility.'}
+
+@app.get('/forecast/miso/{project_id}')
+def miso_forecast(project_id:str):
+    file=Path(__file__).parent/'miso_week13_forecasts.csv'
+    if not file.is_file(): raise HTTPException(503,'MISO model snapshot unavailable')
+    with file.open(encoding='utf-8-sig',newline='') as f:
+        matches=[r for r in csv.DictReader(f) if r['project_id'].strip().casefold()==project_id.strip().casefold()]
+    if not matches: raise HTTPException(404,'No forecast snapshot found for this project ID.')
+    latest=max(matches,key=lambda r:r['panel_quarter'])
+    return {'project_id':latest['project_id'],'snapshot_quarter':latest['panel_quarter'],'age_quarters':int(latest['age_quarters']),'horizon_quarters':int(latest['forecast_horizon_quarters']),'operational_probability':float(latest['predicted_overall_operational_probability']),'withdrawal_probability':float(latest['predicted_overall_withdrawal_probability']),'model':'MISO Week 13 age-specific competing risks','source_commit':'9d24176b6af0d954b8c07d47a0160771374e5ed8','note':'Historical project snapshot, not a new-project or POI forecast. Probabilities cover the next four quarters from the snapshot; the model does not estimate time to IA or COD.'}
+
 @app.get('/pois/nearest')
 def nearest_pois(lon:float,lat:float):
     if not (math.isfinite(lon) and math.isfinite(lat) and -180<=lon<=180 and -90<=lat<=90): raise HTTPException(422,'Invalid coordinates')
