@@ -13,6 +13,10 @@ BASE=os.environ.get('PYORPS_DATA_BASE_URL','').rstrip('/')
 ROOT=Path(os.environ.get('PYORPS_DATA_DIR', str(Path(tempfile.gettempdir())/'pyorps-gis' if BASE else Path.home()/'Downloads'/'PYORPS_MISO_NYISO_Data')))
 MANIFEST_PATH=Path(__file__).with_name('gis_release_manifest.json')
 MANIFEST=json.loads(MANIFEST_PATH.read_text(encoding='utf-8')) if BASE and MANIFEST_PATH.is_file() else None
+CACHE_LIMIT=int(os.environ.get('PYORPS_CACHE_MAX_BYTES',str(1536*1024*1024)))
+
+class CacheLimitError(RuntimeError):
+    pass
 
 def get_file(relative):
     relative=str(relative).replace('\\','/')
@@ -27,6 +31,12 @@ def get_file(relative):
         raise ValueError('PYORPS_DATA_BASE_URL must use HTTPS')
     asset=MANIFEST['files'].get(relative) if MANIFEST else None
     if MANIFEST and not asset: raise FileNotFoundError(f'GIS file absent from release manifest: {relative}')
+    if asset:
+        # Archives are ZIP_STORED, so reserve space for both archive and extraction.
+        # Never remove pre-existing files; Render's ephemeral filesystem resets on restart.
+        used=sum(p.stat().st_size for p in ROOT.rglob('*') if p.is_file()) if ROOT.exists() else 0
+        if used+2*MANIFEST['assets'][asset]['bytes']>CACHE_LIMIT:
+            raise CacheLimitError('Temporary GIS cache limit reached; retry after service restart.')
     url=BASE+'/'+urllib.parse.quote(asset or relative,safe='/')
     target.parent.mkdir(parents=True,exist_ok=True)
     temporary=None

@@ -33,6 +33,12 @@ class CacheTests(unittest.TestCase):
                     self.assertFalse((Path(cache)/'layers'/'land.tif').exists())
             finally:
                 server.shutdown();server.server_close();thread.join()
+
+    def test_archive_over_cache_limit_is_rejected(self):
+        manifest={'files':{'a.tif':'a.zip'},'assets':{'a.zip':{'bytes':100,'sha256':'0'*64}}}
+        with tempfile.TemporaryDirectory() as cache:
+            with patch.object(data_store,'BASE','https://example.com'),patch.object(data_store,'ROOT',Path(cache)),patch.object(data_store,'MANIFEST',manifest),patch.object(data_store,'CACHE_LIMIT',199):
+                with self.assertRaises(data_store.CacheLimitError): data_store.get_file('a.tif')
     def test_download_cache_missing_and_path_safety(self):
         with tempfile.TemporaryDirectory() as source, tempfile.TemporaryDirectory() as cache:
             src=Path(source); (src/'tiles').mkdir(); (src/'tiles'/'sample.tif').write_bytes(b'example')

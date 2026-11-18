@@ -22,6 +22,7 @@ from pyorps import PathFinder
 from shapely.geometry import Point
 from PIL import Image, ImageDraw
 from surface import build, STATE, FOOTPRINTS
+from data_store import CacheLimitError
 
 app=FastAPI(title='MISO and NYISO 345-kV local routing test')
 app.add_middleware(CORSMiddleware, allow_origins=[x.strip() for x in os.environ.get('CORS_ORIGINS','http://127.0.0.1:8772,http://localhost:8772').split(',') if x.strip()], allow_methods=['GET','POST'], allow_headers=['Content-Type'])
@@ -178,6 +179,8 @@ def route(req:Request):
             result.update(route_length_km=round(length,6),estimate=estimate,data=metadata,identify_token=token,screening_map_png_base64=map_png,layer_maps_png_base64=layer_maps,map_layers=map_layers,warning='Screening only. Colours are combined preference indices, not dollar costs. 3 km search buffer and coarser long-route grid can miss alternatives; source coverage is incomplete.')
             return result
     except HTTPException: raise
+    except CacheLimitError as e:
+        raise HTTPException(503,str(e)) from e
     except ValueError as e:
         logging.exception('Route failed')
         raise HTTPException(422,'Could not calculate a route through the available data; try closer points or a different location.') from e
